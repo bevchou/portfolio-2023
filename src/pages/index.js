@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 // import '@/styles/home.scss';
@@ -7,6 +8,13 @@ import Header from '@/components/header';
 
 
 export default function Home() {
+
+  const [pageState, setPageState] = useState("work");
+
+  const updatePage = (newPage) => {
+    setPageState(newPage);
+  }
+
   return (
     <>
       <Head>
@@ -17,8 +25,7 @@ export default function Home() {
       </Head>
      
       <main className={`main`}>
-      <Header />
-        <div className="test">hey</div> 
+      <Header updatePage={updatePage} pageState={pageState}/>
       </main>
     </>
   )
