@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import '@/styles/home.module.scss'
+// import '@/styles/home.scss';
+
+import Header from '@/components/header';
 
 
 
@@ -13,9 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+     
       <main className={`main`}>
-        
-         hey
+      <Header />
+        <div className="test">hey</div> 
       </main>
     </>
   )
