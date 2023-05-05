@@ -18,7 +18,14 @@
     flex: 1;
   }
   .indicator {
-    width: $workItem-height;
+    width: calc($workItem-height - 8px);
+    padding: 0;
+    justify-content: center;
+    svg {
+      margin: -2px;
+      opacity: 0;
+      transition: 0.5s;
+    }
     .dot {
       transition: 0.25s;
       border: $border-style;
@@ -45,11 +52,19 @@
     height: $workItem-height;
     width: $workItem-height;
     z-index: -1;
+    &:first-child {
+      margin-top: -4px;
+    }
   }
 
   &:hover {
-    .indicator .dot {
-      background-color: $text-color-main;
+    .indicator {
+      svg {
+        opacity: 1;
+      }
+      .dot {
+        background-color: $text-color-main;
+      }
     }
   }
 
@@ -59,8 +74,8 @@
 
   /* Phones */
   @media (max-width: $sm-mobile-max) {
-		border-right: none;
-		border-left: none;
+    border-right: none;
+    border-left: none;
     .name {
       flex: 1;
       font-size: $workItem-name-mobile-font-size;

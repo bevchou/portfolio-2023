@@ -1,17 +1,19 @@
 import React from "react";
 
-const WorkItem = ({ name, tags, year }) => {
+import CloseIcon from "@/assets/closeIcon";
+
+const WorkItem = ({ name, tags, year, openSelectedItem, selected }) => {
   const formatTags = (tags) => {
-    return tags.join(",");
+    return tags.join(", ");
   };
   return (
-    <div className="workItem">
+    <div className="workItem" onClick={() => openSelectedItem(selected ? null : name)}>
       <img src="https://placekitten.com/100/100" />
       <div className="name">{name}</div>
       <div className="tags">{formatTags(tags)}</div>
       <div className="year">{year}</div>
       <div className="indicator">
-        <div className="dot"></div>
+        {selected ? <CloseIcon /> : <div className="dot"></div>}
       </div>
     </div>
   );
