@@ -3,7 +3,7 @@
   height: $workItem-height;
   border: $border-style;
   display: flex;
-  // align-items: center;
+  cursor: pointer;
   .name,
   .year {
     font-size: $workItem-name-font-size;
@@ -55,11 +55,12 @@
 
   /* Tablet and Smaller Desktop */
   @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
-
   }
 
   /* Phones */
   @media (max-width: $sm-mobile-max) {
+		border-right: none;
+		border-left: none;
     .name {
       flex: 1;
       font-size: $workItem-name-mobile-font-size;
