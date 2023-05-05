@@ -6,7 +6,7 @@
   .imageContainer {
     border-right: $border-style;
     width: 50%;
-		position: relative;
+    position: relative;
   }
   .textContainer {
     flex: 1;
@@ -19,6 +19,27 @@
       width: 100%;
       height: 100%;
       overflow: auto;
+    }
+  }
+
+  /* Phones */
+  @media (max-width: $sm-mobile-max) {
+    border-right: none;
+    border-left: none;
+    flex-direction: column;
+    .imageContainer {
+      height: 320px;
+      width: 100%;
+			border-right: none;
+		
+    }
+    .textContainer {
+			border-top: $border-style;
+			font-size: $big-body-mobile-font-size;
+      .text {
+				position: relative;
+				padding: $big-body-mobile-padding;
+      }
     }
   }
 }

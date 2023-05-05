@@ -76,16 +76,24 @@
   @media (max-width: $sm-mobile-max) {
     border-right: none;
     border-left: none;
+
+    div:not(:last-child) {
+      border-right: none;
+    }
     .name {
       flex: 1;
       font-size: $workItem-name-mobile-font-size;
       padding: 16px;
     }
-    div:not(:last-child) {
-      border-right: none;
+    .indicator {
+      border-left: $border-style;
+      svg {
+        margin-left: -4px;
+        // margin-top: -4px;
+        opacity: 1;
+      }
     }
     .year,
-    .indicator,
     .tags {
       display: none;
     }
