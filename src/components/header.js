@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 
-const Header = ({ updatePage, pageState }) => {
+const Header = ({ updatePage, updateSelectedItem }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
 
@@ -8,6 +8,9 @@ const Header = ({ updatePage, pageState }) => {
     workRef.current.classList.remove("initialSelect");
     updatePage(pageName);
     if (pageName === "work") {
+      // reset work page
+      updateSelectedItem(null);
+      // update classes
       workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
       aboutRef.current.classList.remove("selected");

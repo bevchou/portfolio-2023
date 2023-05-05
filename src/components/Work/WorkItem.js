@@ -2,12 +2,12 @@ import React from "react";
 
 import CloseIcon from "@/assets/closeIcon";
 
-const WorkItem = ({ name, tags, year, openSelectedItem, selected }) => {
+const WorkItem = ({ name, tags, year, updateSelectedItem, selected }) => {
   const formatTags = (tags) => {
     return tags.join(", ");
   };
   return (
-    <div className="workItem" onClick={() => openSelectedItem(selected ? null : name)}>
+    <div className="workItem" onClick={() => updateSelectedItem(selected ? null : name)}>
       <img src="https://placekitten.com/100/100" />
       <div className="name">{name}</div>
       <div className="tags">{formatTags(tags)}</div>

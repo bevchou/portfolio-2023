@@ -4,19 +4,7 @@ import WorkItem from "./WorkItem";
 import WorkView from "./WorkView";
 import { workData } from "@/workData";
 
-const Work = () => {
-  const [itemState, setItemState] = useState(workData.tangibleController.name);
-    // const [itemState, setItemState] = useState(null);
-
-  const openSelectedItem = (newItem) => {
-    console.log(newItem);
-    setItemState(newItem);
-  };
-
-  const getItemData = () => {
-    return Object.values(workData).find((item) => item.name === itemState);
-  };
-
+const Work = ({ updateSelectedItem, getItemData, itemState }) => {
   return (
     <div className="work">
       {itemState === null ? (
@@ -26,7 +14,7 @@ const Work = () => {
             tags={item.tags}
             year={item.year}
             selected={false}
-            openSelectedItem={openSelectedItem}
+            updateSelectedItem={updateSelectedItem}
           />
         ))
       ) : (
@@ -36,7 +24,7 @@ const Work = () => {
             tags={getItemData().tags}
             year={getItemData().year}
             selected={true}
-            openSelectedItem={openSelectedItem}
+            updateSelectedItem={updateSelectedItem}
           />
           <WorkView getItemData={getItemData} />
         </>
