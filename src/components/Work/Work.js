@@ -10,6 +10,7 @@ const Work = ({ updateSelectedItem, getItemData, itemState }) => {
       {itemState === null ? (
         Object.values(workData).map((item) => (
           <WorkItem
+            key={item.name}
             name={item.name}
             tags={item.tags}
             year={item.year}
@@ -20,6 +21,7 @@ const Work = ({ updateSelectedItem, getItemData, itemState }) => {
       ) : (
         <>
           <WorkItem
+            key={getItemData().name}
             name={getItemData().name}
             tags={getItemData().tags}
             year={getItemData().year}
