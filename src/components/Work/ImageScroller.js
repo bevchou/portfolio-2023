@@ -17,7 +17,7 @@ const ImageScroller = ({ imgSrcs }) => {
     return () => {
       window.removeEventListener("resize", updateScrollerWidth);
     };
-  }, [ window]);
+  }, [window]);
 
   const handleArrowClick = (direction) => {
     if (scrollerRef) {
@@ -44,6 +44,7 @@ const ImageScroller = ({ imgSrcs }) => {
           </div>
           <img src={data.url} className="mainImg" />
           <div className="caption">{data.caption} </div>
+          {index === 0 && <div className="mobileNote caption">scroll right+left</div>}
         </div>
       ))}
 
