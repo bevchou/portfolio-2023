@@ -23,15 +23,19 @@ const Header = ({ updatePage, pageState }) => {
   return (
     <div className="header">
       <div className="name">BEVERLY CHOU</div>
-      <div
-        ref={workRef}
-        className="initialSelect"
-        onClick={() => onHeaderClick("work")}
-      >
-        WORK
-      </div>
-      <div ref={aboutRef} onClick={() => onHeaderClick("about")}>
-        ABOUT
+
+      <div className="pages">
+        <div
+          ref={workRef}
+          className="initialSelect"
+          onClick={() => onHeaderClick("work")}
+        >
+          WORK
+        </div>
+
+        <div ref={aboutRef} onClick={() => onHeaderClick("about")}>
+          ABOUT
+        </div>
       </div>
     </div>
   );

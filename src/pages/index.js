@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 // import '@/styles/home.scss';
 
-import Header from '@/components/header';
+import Header from '@/components/Header';
 import About from '@/components/about/about';
 
 

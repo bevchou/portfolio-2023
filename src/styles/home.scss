@@ -9,26 +9,32 @@
   .header {
     animation: initialLoad 2s;
     display: flex;
-    margin-bottom: 24px;
-    justify-content: space-between;
+    padding-bottom: 24px;
+    // justify-content: space-between;
     width: 100%;
     font-size: $name-font-size;
     .name {
       font-family: "Authentic Sans Condensed";
       letter-spacing: 0.015em;
+      width: 50%;
     }
-    .initialSelect {
-      font-weight: 800;
-    }
-    .selected {
-      animation: select 1.5s;
-      font-weight: 800;
-      order: 2;
-    }
-    .deselected {
-      animation: deselect 1.5s;
-      order: 3;
-      cursor: pointer;
+    .pages {
+      display: flex;
+      justify-content: space-between;
+      width: calc(50% + 148px);
+      .initialSelect {
+        font-weight: 800;
+      }
+      .selected {
+        animation: select 1.5s;
+        font-weight: 800;
+        order: 2;
+      }
+      .deselected {
+        animation: deselect 1.5s;
+        order: 3;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -53,6 +59,14 @@
     .header {
       font-size: $name-mobile-font-size;
       flex-direction: column;
+      padding: 24px;
+      margin: 0;
+      .name {
+        padding-bottom: 12px;
+      }
+      .pages {
+        width: 100%;
+      }
     }
   }
 }
