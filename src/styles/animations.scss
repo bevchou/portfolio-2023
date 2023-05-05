@@ -1,0 +1,55 @@
+@keyframes select {
+  0% {
+    opacity: 1;
+    font-weight: 400;
+    order: 3;
+  }
+  40% {
+    opacity: 0;
+    order: 3;
+  }
+  50% {
+    order: 2;
+    font-weight: 800;
+  }
+  60% {
+    opacity: 0;
+
+    order: 2;
+  }
+  100% {
+    opacity: 1;
+    order: 2;
+  }
+}
+@keyframes deselect {
+  0% {
+    opacity: 1;
+    font-weight: 800;
+    order: 2;
+  }
+  40% {
+    opacity: 0;
+    order: 2;
+  }
+  50% {
+    order: 3;
+    font-weight: 400;
+  }
+  60% {
+    opacity: 0;
+    order: 3;
+  }
+  100% {
+    opacity: 1;
+    order: 3;
+  }
+}
+@keyframes initialLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

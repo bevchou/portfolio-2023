@@ -2,6 +2,28 @@
 // GLOBAL
 $background-color: #ffffff;
 $text-color-main: #000000;
+$border-style: 4px solid #000;
+
+// MAIN TYPOGRAPHY STYLES
+$big-body-font-size: 26px;
+$big-body-padding: 30px;
+
+$big-body-mobile-font-size: 20px;
+$big-body-mobile-padding: 26px;
 
 // HEADER
 $name-font-size: 44px;
+$name-mobile-font-size: 32px;
+
+// ABOUT
+
+
+// CONTACT
+$contact-label-font-size: 24px;
+$contact-label-mobile-font-size: 20px;
+$contact-label-font-weight: 600;
+
+$contact-value-font-size: 20px;
+$contact-value-mobile-font-size: 18px;
+$contact-value-letter-spacing: 0.05em;
+$contact-value-font-family: "Authentic Sans Condensed";

@@ -4,6 +4,7 @@ import Image from 'next/image'
 // import '@/styles/home.scss';
 
 import Header from '@/components/header';
+import About from '@/components/about/about';
 
 
 
@@ -26,6 +27,8 @@ export default function Home() {
      
       <main className={`main`}>
       <Header updatePage={updatePage} pageState={pageState}/>
+
+      <About />
       </main>
     </>
   )
