@@ -31,50 +31,6 @@
       cursor: pointer;
     }
   }
-
-  .about {
-    width: 100%;
-    border: $border-style;
-    display: flex;
-    flex-direction: column;
-    .about-main {
-      display: flex;
-      font-size: $big-body-font-size;
-      img {
-        border-right: $border-style;
-      }
-      .about-text {
-        flex: 1;
-        padding: $big-body-padding;
-        margin: 0;
-      }
-    }
-    .contact {
-      border-top: $border-style;
-      padding: $big-body-padding;
-      display: grid;
-      grid-template-columns: minmax(120px, auto) 1fr minmax(120px, auto) 1fr;
-      gap: 26px;
-      .contactItem {
-        font-size: $contact-label-font-size;
-        display: flex;
-        // justify-content: space-between;
-        .type {
-          text-transform: uppercase;
-          font-weight: $contact-label-font-weight;
-        }
-        .value {
-          flex-grow: 1;
-          font-family: $contact-value-font-family;
-          font-size: $contact-value-font-size;
-          letter-spacing: $contact-value-letter-spacing;
-          color: inherit;
-          text-decoration: none;
-          line-break: anywhere;
-        }
-      }
-    }
-  }
 }
 
 /* Big Desktop */
@@ -87,11 +43,6 @@
 /* Tablet and Smaller Desktop */
 @media (min-width: 768px) and (max-width: 1024px) {
   .main {
-    .about {
-      .contact {
-        grid-template-columns: minmax(200px, auto) 1fr;
-      }
-    }
   }
 }
 
@@ -102,31 +53,6 @@
     .header {
       font-size: $name-mobile-font-size;
       flex-direction: column;
-    }
-    .about {
-      border: none;
-      .about-main {
-        flex-direction: column;
-        font-size: $big-body-mobile-font-size;
-        img {
-          max-height: 320px;
-          border-right: none;
-          border-top: $border-style
-        }
-        .about-text {
-           border-top: $border-style;
-          padding: $big-body-mobile-padding;
-        }
-      }
-      .contact {
-        grid-template-columns: minmax(100px, auto) 1fr;
-        .type {
-          font-size: $contact-label-mobile-font-size;
-        }
-        .value {
-          font-size: $contact-value-mobile-font-size;
-        }
-      }
     }
   }
 }
