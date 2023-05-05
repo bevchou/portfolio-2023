@@ -70,11 +70,16 @@
     }
     .contact {
       grid-template-columns: minmax(100px, auto) 1fr;
+      @media (max-width: 360px) {
+        grid-template-columns: none;
+				gap: 0;
+      }
       .type {
         font-size: $contact-label-mobile-font-size;
       }
       .value {
         font-size: $contact-value-mobile-font-size;
+				padding-bottom: 24px;
       }
     }
   }
