@@ -43,7 +43,7 @@
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
   .about {
     .contact {
       grid-template-columns: minmax(200px, auto) 1fr;
@@ -52,7 +52,7 @@
 }
 
 /* Phones */
-@media (max-width: 768px) {
+@media (max-width: $sm-mobile-max) {
   .about {
     border: none;
     .about-main {

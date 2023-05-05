@@ -1,8 +1,12 @@
-
 // GLOBAL
 $background-color: #ffffff;
 $text-color-main: #000000;
 $border-style: 4px solid #000;
+
+// BREAKPOINTS
+$big-desktop-min: 1440px;
+$sm-desktop-max: 1024px;
+$sm-mobile-max: 768px;
 
 // MAIN TYPOGRAPHY STYLES
 $big-body-font-size: 26px;
@@ -17,7 +21,6 @@ $name-mobile-font-size: 32px;
 
 // ABOUT
 
-
 // CONTACT
 $contact-label-font-size: 24px;
 $contact-label-mobile-font-size: 20px;
@@ -27,3 +30,15 @@ $contact-value-font-size: 20px;
 $contact-value-mobile-font-size: 18px;
 $contact-value-letter-spacing: 0.05em;
 $contact-value-font-family: "Authentic Sans Condensed";
+
+// WORK
+
+// ITEM
+$workItem-height: 62px;
+
+$workItem-name-font-size: 22px;
+$workItem-name-mobile-font-size: 20px;
+$workItem-name-font-weight: 600;
+
+$workItem-tag-font-size: 18px;
+$workItem-tag-font-family: "Authentic Sans Condensed";

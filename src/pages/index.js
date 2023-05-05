@@ -4,7 +4,8 @@ import Image from "next/image";
 // import '@/styles/home.scss';
 
 import Header from "@/components/Header";
-import About from "@/components/About/about";
+import About from "@/components/About/About";
+import Work from "@/components/Work/Work";
 
 export default function Home() {
   const [pageState, setPageState] = useState("work");
@@ -24,8 +25,7 @@ export default function Home() {
 
       <main className={`main`}>
         <Header updatePage={updatePage} pageState={pageState} />
-        {/* {pageState === "about" ?  <About /> : } */}
-       
+        {pageState === "about" ? <About /> : <Work />}
       </main>
     </>
   );

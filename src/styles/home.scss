@@ -12,9 +12,10 @@
     padding-bottom: 24px;
     width: 100%;
     font-size: $name-font-size;
+    letter-spacing: 0.015em;
     .name {
       font-family: "Authentic Sans Condensed";
-      letter-spacing: 0.015em;
+
       width: 50%;
     }
     .pages {
@@ -39,20 +40,20 @@
 }
 
 /* Big Desktop */
-@media (min-width: 1440px) {
+@media (min-width: $big-desktop-min) {
   .main {
     max-width: 1220px;
   }
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
   .main {
   }
 }
 
 /* Phones */
-@media (max-width: 768px) {
+@media (max-width: $sm-mobile-max) {
   .main {
     padding: 0;
     .header {
