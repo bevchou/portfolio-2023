@@ -38,7 +38,7 @@ const Work = () => {
             selected={true}
             openSelectedItem={openSelectedItem}
           />
-          <WorkView />
+          <WorkView getItemData={getItemData} />
         </>
       )}
     </div>

@@ -3,6 +3,7 @@ export const workData = {
     name: "Tangible Controllers",
     tags: ["physical interface", "arduino"],
     year: 2018,
+    text: <div>I prototyped a series of functional physical interfaces that communicate with other devices. I built these projects using Arduino microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI, TCP). Click on the images to learn more about each controller.I prototyped a series of functional physical interfaces that communicate with other devices. I built these projects using Arduino microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI, TCP). Click on the images to learn more about each controller.I prototyped a series of functional physical interfaces that communicate with other devices. I built these projects using Arduino microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI, TCP). Click on the images to learn more about each controller.</div>
   },
   visualMode: {
     name: "Visual Mode",
