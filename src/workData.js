@@ -10,7 +10,7 @@ export const workData = {
       { url: "https://placekitten.com/400/300", caption: "" },
     ],
     text: (
-      <div>
+      <span>
         I prototyped a series of functional physical interfaces that communicate
         with other devices. I built these projects using Arduino
         microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
@@ -26,7 +26,7 @@ export const workData = {
         microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
         digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
         TCP). Click on the images to learn more about each controller.
-      </div>
+      </span>
     ),
   },
   visualMode: {

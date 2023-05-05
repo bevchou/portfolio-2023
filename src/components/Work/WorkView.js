@@ -8,7 +8,13 @@ const WorkView = ({ getItemData }) => {
         <ImageScroller imgSrcs={getItemData().images} />
       </div>
       <div className="textContainer">
-        <div className="text">{getItemData().text}</div>
+        <div className="text">
+          <div>{getItemData().text}</div>
+          <div className="mobileOnly tags">
+            tags: {getItemData().tags.join(", ")}
+          </div>
+          <div className="mobileOnly year">{getItemData().year}</div>
+        </div>
       </div>
     </div>
   );
