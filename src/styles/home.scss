@@ -39,30 +39,24 @@
       }
     }
   }
-}
-
-/* Big Desktop */
-@media (min-width: $big-desktop-min) {
-  .main {
+  /* Big Desktop */
+  @media (min-width: $big-desktop-min) {
     max-width: 1220px;
   }
-}
 
-/* Tablet and Smaller Desktop */
-@media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
-  .main {
+  /* Tablet and Smaller Desktop */
+  @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
+
   }
-}
 
-/* Phones */
-@media (max-width: $sm-mobile-max) {
-  .main {
+  /* Phones */
+  @media (max-width: $sm-mobile-max) {
     padding: 0;
     // width
     .header {
       font-size: $name-mobile-font-size;
       flex-direction: column;
-      padding: 24px;
+      padding: 12px 26px;
       margin: 0;
       .name {
         padding-bottom: 12px;
