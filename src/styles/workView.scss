@@ -3,9 +3,10 @@
   border-top: none;
   flex: 1;
   display: flex;
-  .images {
+  .imageContainer {
     border-right: $border-style;
     width: 50%;
+		position: relative;
   }
   .textContainer {
     flex: 1;

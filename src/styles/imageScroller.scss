@@ -1,0 +1,31 @@
+.imageScroller {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  .imgItem {
+    padding: 16px;
+    flex-basis: 100%;
+    // position: relative;
+    // width: 100%;
+    // height: 100%;
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .imgCount {
+      font-family: $imgScroller-count-font-family;
+      font-size: $imgScroller-count-font-size;
+      font-weight: $imgScroller-count-font-weight;
+    }
+    img {
+      // width: 80%;
+    }
+		.caption {
+			font-family: $imgScroller-caption-font-family;
+      font-size: $imgScroller-caption-font-size;
+		}
+  }
+}

@@ -4,10 +4,10 @@ export const workData = {
     tags: ["physical interface", "arduino"],
     year: 2018,
     images: [
-      "https://placekitten.com/200/300",
-      "https://placekitten.com/600/300",
-      "https://placekitten.com/400/800",
-      "https://placekitten.com/400/300",
+      { url: "https://placekitten.com/200/300", caption: "wow" },
+      { url: "https://placekitten.com/600/300", caption: "here's a longer one lolol " },
+      { url: "https://placekitten.com/400/800", caption: "OOOOOOOO WOWOWOWOWOWOWOWOWOWOWOWO" },
+      { url: "https://placekitten.com/400/300", caption: "" },
     ],
     text: (
       <div>

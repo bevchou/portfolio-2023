@@ -1,10 +1,12 @@
 import React from "react";
-import { workData } from "@/workData";
+import ImageScroller from "./ImageScroller";
 
 const WorkView = ({ getItemData }) => {
   return (
     <div className="workView">
-      <div className="images">hey</div>
+      <div className="imageContainer">
+        <ImageScroller imgSrcs={getItemData().images} />
+      </div>
       <div className="textContainer">
         <div className="text">{getItemData().text}</div>
       </div>

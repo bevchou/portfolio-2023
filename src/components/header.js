@@ -10,7 +10,7 @@ const Header = ({ updatePage, updateSelectedItem }) => {
     if (pageName === "work") {
       // reset work page
       updateSelectedItem(null);
-      // update classes
+      // update classes for animation
       workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
       aboutRef.current.classList.remove("selected");
@@ -35,7 +35,6 @@ const Header = ({ updatePage, updateSelectedItem }) => {
         >
           WORK
         </div>
-
         <div ref={aboutRef} onClick={() => onHeaderClick("about")}>
           ABOUT
         </div>
