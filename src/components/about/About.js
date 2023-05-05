@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { contactInfo, aboutText } from "../../data";
+import { contactInfo, aboutText } from "../../aboutData";
 
 const ContactItem = ({ type, value, linkSrc }) => {
   return (
