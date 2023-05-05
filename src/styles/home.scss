@@ -2,6 +2,7 @@
 
 .main {
   width: 100vw;
+  height: 100vh;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -56,6 +57,7 @@
 @media (max-width: $sm-mobile-max) {
   .main {
     padding: 0;
+    // width
     .header {
       font-size: $name-mobile-font-size;
       flex-direction: column;

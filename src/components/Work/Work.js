@@ -5,8 +5,8 @@ import WorkView from "./WorkView";
 import { workData } from "@/workData";
 
 const Work = () => {
-  // const [itemState, setItemState] = useState(workData.tangibleController.name);
-    const [itemState, setItemState] = useState(null);
+  const [itemState, setItemState] = useState(workData.tangibleController.name);
+    // const [itemState, setItemState] = useState(null);
 
   const openSelectedItem = (newItem) => {
     console.log(newItem);
