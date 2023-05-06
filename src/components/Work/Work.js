@@ -16,6 +16,7 @@ const Work = ({
     list: true,
     project: false,
   });
+
   return (
     <div
       className={`work ${pageState === "work" ? "visible" : "hidden"}`}
@@ -29,8 +30,20 @@ const Work = ({
     >
       {/* show all if nothing selected
       or show the selected item */}
-      {itemState === null ? (
-        <div className="listView">
+
+      {showView.list && (
+        <div
+          className={`listView ${itemState === null ? "visible" : "hidden"}`}
+          onAnimationEnd={() => {
+            if (itemState !== null) {
+              setShowView({
+                ...showView,
+                list: false,
+                project: true,
+              });
+            }
+          }}
+        >
           {Object.values(workData).map((item) => (
             <WorkItem
               key={item.name}
@@ -40,15 +53,28 @@ const Work = ({
               selected={false}
               updateSelectedItem={updateSelectedItem}
             />
-          ))}{" "}
+          ))}
         </div>
-      ) : (
-        <div className="projectView">
+      )}
+
+      {showView.project && (
+        <div
+          className={`projectView ${itemState !== null ? "visible" : "hidden"}`}
+          onAnimationEnd={() => {
+            if (itemState === null) {
+              setShowView({
+                ...showView,
+                list: true,
+                project: false,
+              });
+            }
+          }}
+        >
           <WorkItem
-            key={getItemData().name}
-            name={getItemData().name}
-            tags={getItemData().tags}
-            year={getItemData().year}
+            key={getItemData()?.name}
+            name={getItemData()?.name}
+            tags={getItemData()?.tags}
+            year={getItemData()?.year}
             selected={true}
             updateSelectedItem={updateSelectedItem}
           />

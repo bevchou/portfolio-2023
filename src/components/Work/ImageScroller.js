@@ -37,14 +37,16 @@ const ImageScroller = ({ imgSrcs }) => {
 
   return (
     <div className="imageScroller" id="scroller" ref={scrollerRef}>
-      {imgSrcs.map((data, index) => (
+      {imgSrcs?.map((data, index) => (
         <div className="imgItem" key={index}>
           <div className="imgCount">
             {index + 1}/{imgSrcs.length}
           </div>
           <img src={data.url} className="mainImg" />
           <div className="caption">{data.caption} </div>
-          {index === 0 && <div className="mobileNote caption">scroll right+left</div>}
+          {index === 0 && (
+            <div className="mobileNote caption">scroll right+left</div>
+          )}
         </div>
       ))}
 

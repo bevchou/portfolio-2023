@@ -4,7 +4,7 @@ import CloseIcon from "@/assets/closeIcon";
 
 const WorkItem = ({ name, tags, year, updateSelectedItem, selected }) => {
   const formatTags = (tags) => {
-    return tags.join(", ");
+    return tags?.join(", ");
   };
   return (
     <div className="workItem" onClick={() => updateSelectedItem(selected ? null : name)}>
