@@ -20,7 +20,7 @@ const ContactItem = ({ type, value, linkSrc }) => {
   );
 };
 
-const About = ({ pageState, updateShowAbout,updateShowWork, updatePage }) => {
+const About = ({ pageState, updateShowAbout,updateShowWork }) => {
   return (
     <div
       className={`about ${pageState === "about" ? "visible" : "hidden"}`}

@@ -51,16 +51,11 @@ export default function Home() {
           updatePage={updatePage}
           pageState={pageState}
           updateSelectedItem={updateSelectedItem}
-          showAbout={showAbout}
-          updateShowAbout={updateShowAbout}
-          showWork={showWork}
-          updateShowWork={updateShowWork}
         />
         <div className="contentContainer initialLoad">
           {showAbout && (
             <About
               pageState={pageState}
-              updatePage={updatePage}
               updateShowAbout={updateShowAbout}
               updateShowWork={updateShowWork}
             />
@@ -69,7 +64,6 @@ export default function Home() {
           {showWork && (
             <Work
               pageState={pageState}
-              updatePage={updatePage}
               updateShowWork={updateShowWork}
               updateShowAbout={updateShowAbout}
               updateSelectedItem={updateSelectedItem}

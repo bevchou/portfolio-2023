@@ -4,10 +4,6 @@ const Header = ({
   updatePage,
   updateSelectedItem,
   pageState,
-  updateShowWork,
-  updateShowAbout,
-  showWork,
-  showAbout,
 }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
@@ -19,11 +15,9 @@ const Header = ({
       // reset work page
       updateSelectedItem(null);
       // update page
-      console.log(pageState, showAbout);
       if (pageState !== "work") {
         updatePage("work");
       }
-
       // update classes for header animation
       workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
