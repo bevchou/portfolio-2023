@@ -2,7 +2,7 @@ export const workData = {
   tangibleController: {
     name: "Tangible Controllers",
     tags: ["physical interface", "arduino"],
-    year: 2018,
+    year: 2023,
     images: [
       { url: "https://placekitten.com/200/300", caption: "wow" },
       {
@@ -74,7 +74,7 @@ export const workData = {
   aros: {
     name: "Aros for Visually Impaired Cooks",
     tags: ["product design", "accessibility"],
-    year: 2018,
+    year: 2015,
   },
   soundTent: {
     name: "Sound Tent",

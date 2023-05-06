@@ -8,6 +8,7 @@
   .year {
     font-size: $workItem-name-font-size;
     font-weight: $workItem-name-font-weight;
+    width: 94px;
   }
   .name {
     width: calc(50% - $workItem-height);

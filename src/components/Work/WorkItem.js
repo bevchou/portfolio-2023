@@ -7,7 +7,10 @@ const WorkItem = ({ name, tags, year, updateSelectedItem, selected }) => {
     return tags?.join(", ");
   };
   return (
-    <div className="workItem" onClick={() => updateSelectedItem(selected ? null : name)}>
+    <div
+      className="workItem"
+      onClick={() => updateSelectedItem(selected ? null : name)}
+    >
       <img src="https://placekitten.com/100/100" />
       <div className="name">{name}</div>
       <div className="tags">{formatTags(tags)}</div>
