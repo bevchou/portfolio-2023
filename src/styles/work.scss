@@ -13,11 +13,11 @@
   .listView {
     &.hidden {
       opacity: 0;
-      animation: simpleFadeOut $animation-half-time;
+      animation: simpleFadeOut $animation-fast-time;
     }
     &.visible {
       opacity: 1;
-      animation: simpleFadeIn $animation-half-time;
+      animation: simpleFadeIn $animation-fast-time;
     }
   }
 
