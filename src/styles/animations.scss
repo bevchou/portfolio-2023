@@ -46,6 +46,19 @@
   }
 }
 
+// CONTENT
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 // ABOUT
 @keyframes aboutFadeOut {
   0% {
@@ -136,7 +149,7 @@
     height: 0;
     overflow: hidden;
   }
-  49%{
+  49% {
     height: 0;
     overflow: hidden;
   }
@@ -144,7 +157,6 @@
     opacity: 0;
     height: auto;
     overflow: auto;
-
   }
   100% {
     opacity: 1;
