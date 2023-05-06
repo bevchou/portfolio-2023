@@ -20,23 +20,17 @@ const ContactItem = ({ type, value, linkSrc }) => {
   );
 };
 
-const About = ({
-  pageState,
-  aboutMounted,
-  updatePage,
-  updateWorkMounted,
-  workMounted,
-}) => {
+const About = ({ pageState, updateShowAbout,updateShowWork, updatePage }) => {
   return (
     <div
-      className={`about ${aboutMounted ? "visible" : "hidden"}`}
+      className={`about ${pageState === "about" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
-        console.log(aboutMounted, "about mount");
-        // if the animation is done, then show work page
-        if (!aboutMounted) {
-          updatePage("work");
+        if (pageState === "about") {
+          console.log("ABOUT fade in");
         } else {
-          updateWorkMounted(false);
+          console.log("ABOUT wait for fade out");
+          updateShowAbout(false);
+          updateShowWork(true);
         }
       }}
     >

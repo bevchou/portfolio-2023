@@ -6,24 +6,23 @@ import { workData } from "@/workData";
 
 const Work = ({
   pageState,
+  updatePage,
+  updateShowWork,
+  updateShowAbout,
   updateSelectedItem,
   getItemData,
   itemState,
-  workMounted,
-  updatePage,
-  updateAboutMounted,
-  aboutMounted,
 }) => {
   return (
     <div
-      className={`work ${workMounted ? "visible" : "hidden"}`}
+      className={`work ${pageState === "work" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
-        console.log(workMounted, "work mount");
-        // if the animation is done, then show work page
-        if (!workMounted) {
-          updatePage("about");
+        if (pageState === "work") {
+          console.log("WORK fade in");
         } else {
-          updateAboutMounted(false);
+          console.log("WORK wait for fade out");
+          updateShowWork(false);
+          updateShowAbout(true);
         }
       }}
     >

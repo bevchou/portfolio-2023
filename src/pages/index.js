@@ -11,13 +11,13 @@ export default function Home() {
   // update work/about page selection
   const [pageState, setPageState] = useState("work");
 
-  const [aboutMounted, setAboutMounted] = useState(false);
-  const updateAboutMounted = (bool) => {
-    setAboutMounted(bool);
+  const [showAbout, setShowAbout] = useState(false);
+  const updateShowAbout = (bool) => {
+    setShowAbout(bool);
   };
-  const [workMounted, setWorkMounted] = useState(true);
-  const updateWorkMounted = (bool) => {
-    setWorkMounted(bool);
+  const [showWork, setShowWork] = useState(true);
+  const updateShowWork = (bool) => {
+    setShowWork(bool);
   };
 
   const updatePage = (newPage) => {
@@ -51,32 +51,30 @@ export default function Home() {
           updatePage={updatePage}
           pageState={pageState}
           updateSelectedItem={updateSelectedItem}
-          updateAboutMounted={updateAboutMounted}
-          aboutMounted={aboutMounted}
-          updateWorkMounted={updateWorkMounted}
-          workMounted={workMounted}
+          showAbout={showAbout}
+          updateShowAbout={updateShowAbout}
+          showWork={showWork}
+          updateShowWork={updateShowWork}
         />
         <div className="contentContainer initialLoad">
-          {pageState === "about" && (
+          {showAbout && (
             <About
               pageState={pageState}
-              aboutMounted={aboutMounted}
               updatePage={updatePage}
-              updateWorkMounted={updateWorkMounted}
-              workMounted={workMounted}
+              updateShowAbout={updateShowAbout}
+              updateShowWork={updateShowWork}
             />
           )}
 
-          {pageState === "work" && (
+          {showWork && (
             <Work
-              workMounted={workMounted}
               pageState={pageState}
               updatePage={updatePage}
+              updateShowWork={updateShowWork}
+              updateShowAbout={updateShowAbout}
               updateSelectedItem={updateSelectedItem}
               getItemData={getItemData}
               itemState={itemState}
-              updateAboutMounted={updateAboutMounted}
-              aboutMounted={aboutMounted}
             />
           )}
         </div>

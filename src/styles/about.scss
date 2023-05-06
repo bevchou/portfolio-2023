@@ -67,12 +67,6 @@
   /* Phones */
   @media (max-width: $sm-mobile-max) {
     border: none;
-    &.hidden {
-      animation: aboutFadeOutMobile $animation-half-time;
-    }
-    &.visible {
-      animation: aboutFadeInMobile $animation-time;
-    }
     .about-main {
       flex-direction: column;
       font-size: $big-body-mobile-font-size;

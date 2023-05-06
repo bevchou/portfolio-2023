@@ -4,10 +4,10 @@ const Header = ({
   updatePage,
   updateSelectedItem,
   pageState,
-  updateAboutMounted,
-  aboutMounted,
-  updateWorkMounted,
-  workMounted,
+  updateShowWork,
+  updateShowAbout,
+  showWork,
+  showAbout,
 }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
@@ -18,24 +18,23 @@ const Header = ({
     if (pageName === "work") {
       // reset work page
       updateSelectedItem(null);
-      console.log("WORK BEV", workMounted);
-      updateWorkMounted(!workMounted);
+      // update page
+      console.log(pageState, showAbout);
       if (pageState !== "work") {
         updatePage("work");
       }
 
-      // update classes for animation
+      // update classes for header animation
       workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
       aboutRef.current.classList.remove("selected");
       aboutRef.current.classList.add("deselected");
     } else if (pageName === "about") {
-      console.log("ABOUT BEV", aboutMounted);
-      updateAboutMounted(!aboutMounted);
+      // update page
       if (pageState !== "about") {
         updatePage("about");
       }
-
+      // update classes for header sanimation
       aboutRef.current.classList.remove("deselected");
       aboutRef.current.classList.add("selected");
       workRef.current.classList.remove("selected");
