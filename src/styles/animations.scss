@@ -1,3 +1,4 @@
+// HEADER
 @keyframes select {
   0% {
     opacity: 1;
@@ -45,15 +46,51 @@
     order: 3;
   }
 }
-@keyframes fadeIn {
+
+// ABOUT
+@keyframes aboutFadeOut {
+  0% {
+    opacity: 1;
+    height: auto;
+    margin-top: 0;
+    // display: inherit;
+    // border: $border-style;
+  }
+  99% {
+    margin-top: 0;
+    // display: none;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+    margin-top: -8px;
+    // border: white 4px;
+    // display: none;
+  }
+}
+
+@keyframes aboutFadeIn {
   0% {
     opacity: 0;
+    height: 0;
+    margin-top: -8px;
+  }
+  50% {
+    opacity: 0;
+    height: 0;
+    margin-top: -8px;
+  }
+  51% {
+    height: auto;
+    margin-top: 0;
   }
   100% {
     opacity: 1;
   }
 }
-@keyframes fadeOut {
+
+// WORK
+@keyframes workFadeOut {
   0% {
     opacity: 1;
   }
@@ -62,7 +99,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes workFadeIn {
   0% {
     opacity: 0;
   }

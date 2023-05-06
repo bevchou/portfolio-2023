@@ -8,7 +8,7 @@
   // animations
   &.hidden {
 		opacity: 0;
-    animation: fadeOut 1s;
+    animation: workFadeOut 1s;
     // height: 0;
     // margin-top: -8px;
     // border: transparent;
@@ -17,6 +17,6 @@
   }
   &.visible {
     opacity: 1;
-    animation: fadeIn 2s;
+    animation: workFadeIn 2s;
   }
 }
