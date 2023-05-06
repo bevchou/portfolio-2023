@@ -20,9 +20,26 @@ const ContactItem = ({ type, value, linkSrc }) => {
   );
 };
 
-const About = ({ pageState }) => {
+const About = ({
+  pageState,
+  aboutMounted,
+  updatePage,
+  updateWorkMounted,
+  workMounted,
+}) => {
   return (
-    <div className={`about ${pageState === "about" ? "visible" : "hidden"}`}>
+    <div
+      className={`about ${aboutMounted ? "visible" : "hidden"}`}
+      onAnimationEnd={() => {
+        console.log(aboutMounted, "about mount");
+        // if the animation is done, then show work page
+        if (!aboutMounted) {
+          updatePage("work");
+        } else {
+          updateWorkMounted(false);
+        }
+      }}
+    >
       <div className="about-main">
         <img src="https://placekitten.com/200/300" />
         <div className="about-text">{aboutText}</div>

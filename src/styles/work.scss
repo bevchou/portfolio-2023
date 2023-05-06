@@ -5,15 +5,15 @@
   display: flex;
   flex-direction: column;
 
-  // animations
+  // // animations
   &.hidden {
     opacity: 0;
-    animation: workFadeOut $animation-half-time;
-    height: 0;
-    overflow: hidden;
+    animation: simpleFadeOut $animation-time;
+    // height: 0;
+    // overflow: hidden;
   }
   &.visible {
     opacity: 1;
-    animation: workFadeIn $animation-time;
+    animation: simpleFadeIn $animation-time;
   }
 }

@@ -4,9 +4,29 @@ import WorkItem from "./WorkItem";
 import WorkView from "./WorkView";
 import { workData } from "@/workData";
 
-const Work = ({ pageState, updateSelectedItem, getItemData, itemState }) => {
+const Work = ({
+  pageState,
+  updateSelectedItem,
+  getItemData,
+  itemState,
+  workMounted,
+  updatePage,
+  updateAboutMounted,
+  aboutMounted,
+}) => {
   return (
-    <div className={`work ${pageState === "work" ? "visible" : "hidden"}`}>
+    <div
+      className={`work ${workMounted ? "visible" : "hidden"}`}
+      onAnimationEnd={() => {
+        console.log(workMounted, "work mount");
+        // if the animation is done, then show work page
+        if (!workMounted) {
+          updatePage("about");
+        } else {
+          updateAboutMounted(false);
+        }
+      }}
+    >
       {/* show all if nothing selected
       or show the selected item */}
       {itemState === null ? (

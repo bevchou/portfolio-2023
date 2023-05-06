@@ -63,17 +63,17 @@
 @keyframes aboutFadeOut {
   0% {
     opacity: 1;
-    height: auto;
-    border: $border-style;
+    // height: auto;
+    // border: $border-style;
   }
-  99% {
-    height: auto;
-    border: $border-style;
-  }
+  // 99% {
+  //   height: auto;
+  //   border: $border-style;
+  // }
   100% {
     opacity: 0;
-    height: 0;
-    border: 0px;
+    // height: 0;
+    // border: 0px;
   }
 }
 
@@ -94,18 +94,18 @@
 @keyframes aboutFadeIn {
   0% {
     opacity: 0;
-    height: 0;
-    margin-top: -8px;
+    // height: 0;
+    // margin-top: -8px;
   }
-  50% {
-    opacity: 0;
-    height: 0;
-    margin-top: -8px;
-  }
-  51% {
-    height: auto;
-    margin-top: 0;
-  }
+  // 50% {
+  //   opacity: 0;
+  //   height: 0;
+  //   margin-top: -8px;
+  // }
+  // 51% {
+  //   height: auto;
+  //   margin-top: 0;
+  // }
   100% {
     opacity: 1;
   }
@@ -162,5 +162,23 @@
     opacity: 1;
     height: auto;
     overflow: auto;
+  }
+}
+
+// CONTENT
+@keyframes simpleFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes simpleFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

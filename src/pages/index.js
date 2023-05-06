@@ -10,7 +10,18 @@ import Work from "@/components/Work/Work";
 export default function Home() {
   // update work/about page selection
   const [pageState, setPageState] = useState("work");
+
+  const [aboutMounted, setAboutMounted] = useState(false);
+  const updateAboutMounted = (bool) => {
+    setAboutMounted(bool);
+  };
+  const [workMounted, setWorkMounted] = useState(true);
+  const updateWorkMounted = (bool) => {
+    setWorkMounted(bool);
+  };
+
   const updatePage = (newPage) => {
+    console.log(newPage);
     setPageState(newPage);
   };
 
@@ -40,15 +51,34 @@ export default function Home() {
           updatePage={updatePage}
           pageState={pageState}
           updateSelectedItem={updateSelectedItem}
+          updateAboutMounted={updateAboutMounted}
+          aboutMounted={aboutMounted}
+          updateWorkMounted={updateWorkMounted}
+          workMounted={workMounted}
         />
         <div className="contentContainer initialLoad">
-          <About pageState={pageState} />
-          <Work
-            pageState={pageState}
-            updateSelectedItem={updateSelectedItem}
-            getItemData={getItemData}
-            itemState={itemState}
-          />
+          {pageState === "about" && (
+            <About
+              pageState={pageState}
+              aboutMounted={aboutMounted}
+              updatePage={updatePage}
+              updateWorkMounted={updateWorkMounted}
+              workMounted={workMounted}
+            />
+          )}
+
+          {pageState === "work" && (
+            <Work
+              workMounted={workMounted}
+              pageState={pageState}
+              updatePage={updatePage}
+              updateSelectedItem={updateSelectedItem}
+              getItemData={getItemData}
+              itemState={itemState}
+              updateAboutMounted={updateAboutMounted}
+              aboutMounted={aboutMounted}
+            />
+          )}
         </div>
       </main>
     </>

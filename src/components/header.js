@@ -1,21 +1,41 @@
 import React, { useRef } from "react";
 
-const Header = ({ updatePage, updateSelectedItem }) => {
+const Header = ({
+  updatePage,
+  updateSelectedItem,
+  pageState,
+  updateAboutMounted,
+  aboutMounted,
+  updateWorkMounted,
+  workMounted,
+}) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
 
   const onHeaderClick = (pageName) => {
     workRef.current.classList.remove("initialSelect");
-    updatePage(pageName);
+    // updatePage(pageName);
     if (pageName === "work") {
       // reset work page
       updateSelectedItem(null);
+      console.log("WORK BEV", workMounted);
+      updateWorkMounted(!workMounted);
+      if (pageState !== "work") {
+        updatePage("work");
+      }
+
       // update classes for animation
       workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
       aboutRef.current.classList.remove("selected");
       aboutRef.current.classList.add("deselected");
     } else if (pageName === "about") {
+      console.log("ABOUT BEV", aboutMounted);
+      updateAboutMounted(!aboutMounted);
+      if (pageState !== "about") {
+        updatePage("about");
+      }
+
       aboutRef.current.classList.remove("deselected");
       aboutRef.current.classList.add("selected");
       workRef.current.classList.remove("selected");
