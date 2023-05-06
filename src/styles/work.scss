@@ -2,10 +2,26 @@
 .work {
   width: 100%;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
+  .projectView {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .projectView,
+  .listView {
+    &.hidden {
+      opacity: 0;
+      animation: simpleFadeOut $animation-half-time;
+    }
+    &.visible {
+      opacity: 1;
+      animation: simpleFadeIn $animation-half-time;
+    }
+  }
 
-  // // animations
+  // animations
   &.hidden {
     opacity: 0;
     animation: simpleFadeOut $animation-half-time;

@@ -12,6 +12,10 @@ const Work = ({
   getItemData,
   itemState,
 }) => {
+  const [showView, setShowView] = useState({
+    list: true,
+    project: false,
+  });
   return (
     <div
       className={`work ${pageState === "work" ? "visible" : "hidden"}`}
@@ -26,18 +30,20 @@ const Work = ({
       {/* show all if nothing selected
       or show the selected item */}
       {itemState === null ? (
-        Object.values(workData).map((item) => (
-          <WorkItem
-            key={item.name}
-            name={item.name}
-            tags={item.tags}
-            year={item.year}
-            selected={false}
-            updateSelectedItem={updateSelectedItem}
-          />
-        ))
+        <div className="listView">
+          {Object.values(workData).map((item) => (
+            <WorkItem
+              key={item.name}
+              name={item.name}
+              tags={item.tags}
+              year={item.year}
+              selected={false}
+              updateSelectedItem={updateSelectedItem}
+            />
+          ))}{" "}
+        </div>
       ) : (
-        <>
+        <div className="projectView">
           <WorkItem
             key={getItemData().name}
             name={getItemData().name}
@@ -47,7 +53,7 @@ const Work = ({
             updateSelectedItem={updateSelectedItem}
           />
           <WorkView getItemData={getItemData} />
-        </>
+        </div>
       )}
     </div>
   );
