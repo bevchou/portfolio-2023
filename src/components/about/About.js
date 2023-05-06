@@ -26,9 +26,9 @@ const About = ({ pageState, updateShowAbout,updateShowWork }) => {
       className={`about ${pageState === "about" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
         if (pageState === "about") {
-          console.log("ABOUT fade in");
+          // about fade in
         } else {
-          console.log("ABOUT wait for fade out");
+          // about fade out
           updateShowAbout(false);
           updateShowWork(true);
         }

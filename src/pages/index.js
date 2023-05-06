@@ -10,19 +10,19 @@ import Work from "@/components/Work/Work";
 export default function Home() {
   // update work/about page selection
   const [pageState, setPageState] = useState("work");
+  const updatePage = (newPage) => {
+    setPageState(newPage);
+  };
 
+  // when to show/hide about page
   const [showAbout, setShowAbout] = useState(false);
   const updateShowAbout = (bool) => {
     setShowAbout(bool);
   };
+  // when to show/hide work page
   const [showWork, setShowWork] = useState(true);
   const updateShowWork = (bool) => {
     setShowWork(bool);
-  };
-
-  const updatePage = (newPage) => {
-    console.log(newPage);
-    setPageState(newPage);
   };
 
   // set which portfolio piece to show

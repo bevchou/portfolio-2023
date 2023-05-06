@@ -17,9 +17,9 @@ const Work = ({
       className={`work ${pageState === "work" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
         if (pageState === "work") {
-          console.log("WORK fade in");
+          // work fade in
         } else {
-          console.log("WORK wait for fade out");
+          // work fade out
           updateShowWork(false);
           updateShowAbout(true);
         }
