@@ -7,6 +7,8 @@ import { workData } from "@/workData";
 const Work = ({ pageState, updateSelectedItem, getItemData, itemState }) => {
   return (
     <div className={`work ${pageState === "work" ? "visible" : "hidden"}`}>
+      {/* show all if nothing selected
+      or show the selected item */}
       {itemState === null ? (
         Object.values(workData).map((item) => (
           <WorkItem
