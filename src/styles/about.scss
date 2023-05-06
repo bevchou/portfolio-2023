@@ -16,7 +16,7 @@
   &.visible {
     height: auto;
     opacity: 1;
-    animation: aboutFadeIn $animation-time
+    animation: aboutFadeIn $animation-time;
   }
 
   .about-main {
@@ -59,21 +59,22 @@
       }
     }
   }
-}
-
-/* Tablet and Smaller Desktop */
-@media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
-  .about {
+  /* Tablet and Smaller Desktop */
+  @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
     .contact {
       grid-template-columns: minmax(200px, auto) 1fr;
     }
   }
-}
 
-/* Phones */
-@media (max-width: $sm-mobile-max) {
-  .about {
+  /* Phones */
+  @media (max-width: $sm-mobile-max) {
     border: none;
+    &.hidden {
+      animation: aboutFadeOutMobile $animation-half-time;
+    }
+    &.visible {
+      animation: aboutFadeInMobile $animation-time;
+    }
     .about-main {
       flex-direction: column;
       font-size: $big-body-mobile-font-size;

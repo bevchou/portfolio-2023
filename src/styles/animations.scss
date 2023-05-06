@@ -64,6 +64,20 @@
   }
 }
 
+@keyframes aboutFadeOutMobile {
+  0% {
+    opacity: 1;
+    height: auto;
+  }
+  99% {
+    height: auto;
+  }
+  100% {
+    opacity: 0;
+    height: 0;
+  }
+}
+
 @keyframes aboutFadeIn {
   0% {
     opacity: 0;
@@ -78,6 +92,23 @@
   51% {
     height: auto;
     margin-top: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aboutFadeInMobile {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+  50% {
+    opacity: 0;
+    height: 0;
+  }
+  51% {
+    height: auto;
   }
   100% {
     opacity: 1;
