@@ -16,9 +16,7 @@ const Work = ({
     <div
       className={`work ${pageState === "work" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
-        if (pageState === "work") {
-          // work fade in
-        } else {
+        if (pageState !== "work") {
           // work fade out
           updateShowWork(false);
           updateShowAbout(true);

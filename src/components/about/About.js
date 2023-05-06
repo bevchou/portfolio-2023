@@ -20,14 +20,12 @@ const ContactItem = ({ type, value, linkSrc }) => {
   );
 };
 
-const About = ({ pageState, updateShowAbout,updateShowWork }) => {
+const About = ({ pageState, updateShowAbout, updateShowWork }) => {
   return (
     <div
       className={`about ${pageState === "about" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
-        if (pageState === "about") {
-          // about fade in
-        } else {
+        if (pageState !== "about") {
           // about fade out
           updateShowAbout(false);
           updateShowWork(true);
