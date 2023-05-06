@@ -80,6 +80,11 @@
     .contact {
       grid-template-columns: minmax(100px, auto) 1fr;
       border-bottom: $border-style;
+      .contactItem:last-child {
+        .value {
+          padding-bottom: 0;
+        }
+      }
 
       @media (max-width: 360px) {
         grid-template-columns: none;
