@@ -8,12 +8,10 @@
   // // animations
   &.hidden {
     opacity: 0;
-    animation: simpleFadeOut $animation-time;
-    // height: 0;
-    // overflow: hidden;
+    animation: simpleFadeOut $animation-half-time;
   }
   &.visible {
     opacity: 1;
-    animation: simpleFadeIn $animation-time;
+    animation: simpleFadeIn $animation-half-time;
   }
 }

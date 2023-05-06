@@ -6,7 +6,6 @@ import { workData } from "@/workData";
 
 const Work = ({
   pageState,
-  updatePage,
   updateShowWork,
   updateShowAbout,
   updateSelectedItem,
