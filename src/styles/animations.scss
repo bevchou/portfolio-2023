@@ -54,17 +54,19 @@
     height: auto;
     margin-top: 0;
     // display: inherit;
-    // border: $border-style;
+    border: $border-style;
   }
   99% {
     margin-top: 0;
     // display: none;
+    height: auto;
+    border: $border-style;
   }
   100% {
     opacity: 0;
     height: 0;
     margin-top: -8px;
-    // border: white 4px;
+    border: 0px;
     // display: none;
   }
 }
