@@ -8,20 +8,21 @@ import About from "@/components/About/About";
 import Work from "@/components/Work/Work";
 
 export default function Home() {
-  // update work/about page
+  // update work/about page selection
   const [pageState, setPageState] = useState("work");
   const updatePage = (newPage) => {
     setPageState(newPage);
   };
 
-  // const [itemState, setItemState] = useState(workData.tangibleController.name);
+  // set which portfolio piece to show
   const [itemState, setItemState] = useState(null);
 
+  // update which portfolio page is showing
   const updateSelectedItem = (newItem) => {
-    console.log(newItem);
     setItemState(newItem);
   };
 
+  // get data for each portfolio piece
   const getItemData = () => {
     return Object.values(workData).find((item) => item.name === itemState);
   };
@@ -48,15 +49,6 @@ export default function Home() {
             getItemData={getItemData}
             itemState={itemState}
           />
-          {/* {pageState === "about" ? (
-            <About />
-          ) : (
-            <Work
-              updateSelectedItem={updateSelectedItem}
-              getItemData={getItemData}
-              itemState={itemState}
-            />
-          )} */}
         </div>
       </main>
     </>
