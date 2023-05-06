@@ -40,15 +40,24 @@ export default function Home() {
           pageState={pageState}
           updateSelectedItem={updateSelectedItem}
         />
-        {pageState === "about" ? (
-          <About />
-        ) : (
+        <div className="contentContainer initialLoad">
+          <About pageState={pageState} />
           <Work
+            pageState={pageState}
             updateSelectedItem={updateSelectedItem}
             getItemData={getItemData}
             itemState={itemState}
           />
-        )}
+          {/* {pageState === "about" ? (
+            <About />
+          ) : (
+            <Work
+              updateSelectedItem={updateSelectedItem}
+              getItemData={getItemData}
+              itemState={itemState}
+            />
+          )} */}
+        </div>
       </main>
     </>
   );

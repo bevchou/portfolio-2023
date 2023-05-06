@@ -22,7 +22,7 @@ const ContactItem = ({ type, value, linkSrc }) => {
 
 const About = ({ pageState }) => {
   return (
-    <div className="about">
+    <div className={`about ${pageState === "about" ? "visible" : "hidden"}`}>
       <div className="about-main">
         <img src="https://placekitten.com/200/300" />
         <div className="about-text">{aboutText}</div>

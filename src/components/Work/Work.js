@@ -4,9 +4,9 @@ import WorkItem from "./WorkItem";
 import WorkView from "./WorkView";
 import { workData } from "@/workData";
 
-const Work = ({ updateSelectedItem, getItemData, itemState }) => {
+const Work = ({ pageState, updateSelectedItem, getItemData, itemState }) => {
   return (
-    <div className="work">
+    <div className={`work ${pageState === "work" ? "visible" : "hidden"}`}>
       {itemState === null ? (
         Object.values(workData).map((item) => (
           <WorkItem

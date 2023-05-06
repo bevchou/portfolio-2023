@@ -1,8 +1,25 @@
+@import "./animations.scss";
 .about {
   width: 100%;
   border: $border-style;
   display: flex;
   flex-direction: column;
+
+  // // animations
+  &.hidden {
+    opacity: 0;
+    animation: fadeOut 1s;
+    // height: 0;
+    // margin-top: -8px;
+    // border: transparent;
+    // position: relative;
+		// z-index: -1;
+  }
+  &.visible {
+    opacity: 1;
+    animation: fadeIn 2s;
+  }
+
   .about-main {
     display: flex;
     font-size: $big-body-font-size;
@@ -75,14 +92,14 @@
       grid-template-columns: minmax(100px, auto) 1fr;
       @media (max-width: 360px) {
         grid-template-columns: none;
-				gap: 0;
+        gap: 0;
       }
       .type {
         font-size: $contact-label-mobile-font-size;
       }
       .value {
         font-size: $contact-value-mobile-font-size;
-				padding-bottom: 24px;
+        padding-bottom: 24px;
       }
     }
   }
