@@ -62,6 +62,7 @@
 
   /* Phones */
   @media (max-width: $sm-mobile-max) {
+    padding-bottom: $extra-mobile-bottom-padding;
     border: none;
     .about-main {
       flex-direction: column;
@@ -78,6 +79,8 @@
     }
     .contact {
       grid-template-columns: minmax(100px, auto) 1fr;
+      border-bottom: $border-style;
+
       @media (max-width: 360px) {
         grid-template-columns: none;
         gap: 0;

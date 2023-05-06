@@ -30,6 +30,7 @@
   @media (max-width: $sm-mobile-max) {
     border: none;
     flex-direction: column;
+    padding-bottom: $extra-mobile-bottom-padding;
     .imageContainer {
       height: 336px;
       width: 100%;
