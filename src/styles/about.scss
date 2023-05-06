@@ -9,16 +9,9 @@
   &.hidden {
     opacity: 0;
     animation: aboutFadeOut 1s;
-    // animation-fill-mode: forwards;
-    // border: transparent;
     height: 0;
+    overflow: hidden;
     border: 0px;
-    // border: white 4px;
-    // display: none;
-    // margin-top: -8px;
-    // border: transparent;
-    // position: relative;
-    // z-index: -1;
   }
   &.visible {
     height: auto;

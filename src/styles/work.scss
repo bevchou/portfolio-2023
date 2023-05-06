@@ -9,7 +9,8 @@
   &.hidden {
 		opacity: 0;
     animation: workFadeOut 1s;
-    // height: 0;
+    height: 0;
+		overflow: hidden;
     // margin-top: -8px;
     // border: transparent;
     // position: relative;
