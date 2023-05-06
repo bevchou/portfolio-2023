@@ -7,17 +7,13 @@
 
   // animations
   &.hidden {
-		opacity: 0;
-    animation: workFadeOut 1s;
+    opacity: 0;
+    animation: workFadeOut $animation-half-time;
     height: 0;
-		overflow: hidden;
-    // margin-top: -8px;
-    // border: transparent;
-    // position: relative;
-		// z-index: -1;
+    overflow: hidden;
   }
   &.visible {
     opacity: 1;
-    animation: workFadeIn 2s;
+    animation: workFadeIn $animation-time;
   }
 }

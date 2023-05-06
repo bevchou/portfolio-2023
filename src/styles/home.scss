@@ -9,7 +9,7 @@
   align-items: center;
   overflow-x: hidden;
   .header {
-    animation: fadeIn 2s;
+    animation: fadeIn $animation-time;
     display: flex;
     padding-bottom: 16px;
     width: 100%;
@@ -28,13 +28,13 @@
         font-weight: 800;
       }
       .selected {
-        animation: select 1.5s;
+        animation: select $animation-time;
         font-weight: 800;
         order: 2;
         cursor: pointer;
       }
       .deselected {
-        animation: deselect 1.5s;
+        animation: deselect $animation-time;
         order: 3;
         cursor: pointer;
       }
@@ -44,7 +44,7 @@
     width: 100%;
     height: 100%;
     &.initialLoad {
-      animation: fadeIn 2s;
+      animation: fadeIn $animation-time;
     }
   }
   /* Big Desktop */
