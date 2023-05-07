@@ -86,12 +86,40 @@ export const workData = {
       </span>
     ),
   },
-  
   aros: {
-    name: "Aros for Visually Impaired Cooks",
+    name: "Spice Dispenser for Visually Impaired",
     icon: "/projects/aros/icon.jpg",
     tags: ["product design", "accessibility"],
     year: 2015,
+    images: [
+      { url: "/projects/aros/final1.jpg", caption: "Identify spices using braille labels and/or textures on the top and body of the dispenser. Magnetic strips help to feel where to place each dispenser and prevent them from tipping over." },
+      {
+        url: "/projects/aros/howto1.jpg",
+        caption: "Locate the tab at the top of the dispenser and push it up to open. Insert the funnel by aligning bright green sections.",
+      },
+      {
+        url: "/projects/aros/howto2.jpg",
+        caption: "Pour in spices. Remove funnel and close lid.",
+      },
+      { url: "/projects/aros/howto3.jpg", caption: "Each button push dispenses 1/4 teaspoon of spices into a storage chamber. Push the button as many times as necessary to get the desired amount." },
+      { url: "/projects/aros/howto4.jpg", caption: "Hold Aros over your cooking, then open the tab at the bottom to release spices." },
+      { url: "/projects/aros/market1.png", caption: "Competition analysis position plot" },
+      { url: "/projects/aros/process1.jpg", caption: "Alpha prototypes for usability testing and Kansei Engineering Analysis" },
+      { url: "/projects/aros/usertest1.jpg", caption: "Usability testing in progress" },
+      { url: "/projects/aros/processvid", caption: "Force analysis simulation animation in ADAMS" },
+      { url: "/projects/aros/engin1.png", caption: "Force analysis simulation results" },
+      { url: "/projects/aros/process2.jpg", caption: "Internal parts in proof-of-concept" },
+    ],
+    text: (<span>
+      Aros is a spice dispenser designed specifically for visually impaired people to accurately dispense spices in 1/4 teaspoon quantities. Intended to be an intuitive experience for users with limited or no vision, Aros has tactile indicators, high contrast
+      colors, and a unique form to take into account that visually impaired users tend to use their fingers rather than their thumbs.
+      <br></br> <br></br>
+      <u>My Role:</u> I played a large role in identifying the user scenario, market research, and competition analysis. I did the engineering for the measurement and dispensing mechanism and conducted force analyses on all mechanical components. I also
+      created build plans for injection mold mass manufacturing and aided in the fabrication of the proof-of-concept.
+      <br></br> <br></br>The Aros proof-of-concept was fabricated from 3-D printed ABS plastic and NinjaFlex, laser cut clear acrylic, steel pins, a spring, and magnets.
+      <br></br> <br></br>
+      <u>The Aros team:</u> Beverly Chou (B.S.E. Mechanical Engineering), Rohan Malpani (M.S. Human-Computer Interaction), Adam Rosekelly (M.S. Architecture), and Matt Vedrin (M.S.E. Mechanical Engineering)
+    </span>)
   },
   soundTent: {
     name: "Sound Tent",
