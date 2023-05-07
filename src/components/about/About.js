@@ -46,6 +46,7 @@ const About = ({ pageState, updateShowAbout, updateShowWork }) => {
           />
         ))}
       </div>
+      <div className="siteInfo"></div>
     </div>
   );
 };
