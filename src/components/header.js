@@ -1,16 +1,23 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 
-const Header = ({
-  updatePage,
-  updateSelectedItem,
-  pageState,
-}) => {
+const Header = ({ updatePage, updateSelectedItem, pageState }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
 
+  // useEffect(() => {
+  //   if (pageState === "work") {
+  //     workRef.current.classList.add("initialSelect");
+  //   } else if (pageState === "about") {
+  //     aboutRef.current.classList.add("initialSelect");
+  //   }
+  // }, []);
+
   const onHeaderClick = (pageName) => {
     workRef.current.classList.remove("initialSelect");
-    // updatePage(pageName);
+
+    // update the URL
+    history.pushState({ pageName: pageName }, "", `/${pageName}`);
+
     if (pageName === "work") {
       // reset work page
       updateSelectedItem(null);
@@ -41,11 +48,7 @@ const Header = ({
       <div className="name">BEVERLY CHOU</div>
 
       <div className="pages">
-        <div
-          ref={workRef}
-          className="initialSelect"
-          onClick={() => onHeaderClick("work")}
-        >
+        <div ref={workRef} className={`initialSelect`} onClick={() => onHeaderClick("work")}>
           WORK
         </div>
         <div ref={aboutRef} onClick={() => onHeaderClick("about")}>

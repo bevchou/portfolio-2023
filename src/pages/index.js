@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 
 import { workData } from "@/workData";
@@ -9,7 +9,7 @@ import Work from "@/components/Work/Work";
 
 export default function Home() {
   // update work/about page selection
-  const [pageState, setPageState] = useState("work");
+  const [pageState, setPageState] = useState(null);
   const updatePage = (newPage) => {
     setPageState(newPage);
   };
@@ -24,6 +24,15 @@ export default function Home() {
   const updateShowWork = (bool) => {
     setShowWork(bool);
   };
+
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const path = url.pathname.split("/").slice(1);
+    const page = path[0];
+    setPageState(page ?? "work");
+    setShowAbout(page === "about");
+    setShowWork(page === "work");
+  }, []);
 
   // set which portfolio piece to show
   const [itemState, setItemState] = useState(null);

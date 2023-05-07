@@ -11,6 +11,10 @@ const nextConfig = {
         source: "/work",
         destination: "/",
       },
+      {
+        source: "/work/:item",
+        destination: "/",
+      },
     ];
   },
 };
