@@ -23,6 +23,7 @@
     img {
       border-right: $border-style;
       object-fit: cover;
+      max-width: 250px;
     }
     .about-text {
       flex: 1;
@@ -71,14 +72,19 @@
   /* Phones */
   @media (max-width: $sm-mobile-max) {
     padding-bottom: $extra-mobile-bottom-padding;
-    border: none;
     .about-main {
       flex-direction: column;
       font-size: $big-body-mobile-font-size;
+      border-left: none;
+      border-right: none;
       img {
-        max-height: 320px;
+        max-width: none;
+        max-height: 200px;
         border-right: none;
-        border-top: $border-style;
+        padding: 0 25%;
+        @media (max-width: 500px) {
+          padding: 0 12%;
+        }
       }
       .about-text {
         border-top: $border-style;
@@ -86,6 +92,8 @@
       }
     }
     .contact {
+      border-left: none;
+      border-right: none;
       grid-template-columns: minmax(100px, auto) 1fr;
       border-bottom: $border-style;
       .contactItem:last-child {

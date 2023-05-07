@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { contactInfo, aboutText } from "@/aboutData";
+import { contactInfo, aboutText, photo } from "@/aboutData";
 
 const ContactItem = ({ type, value, linkSrc }) => {
   return (
@@ -33,7 +33,7 @@ const About = ({ pageState, updateShowAbout, updateShowWork }) => {
       }}
     >
       <div className="about-main">
-        <img src="https://placekitten.com/200/300" />
+        <img src={photo} />
         <div className="about-text">{aboutText}</div>
       </div>
       <div className="contact">
