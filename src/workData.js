@@ -53,21 +53,27 @@ export const workData = {
     ],
     text: (
       <span>
-        I prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.I
-        prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.I
-        prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.
+        Originally designed to be a collective{" "}
+        <a href="https://en.wikipedia.org/wiki/VJing">VJing</a> experience for
+        parties, Visual Mode is a web app and a pop-up interactive installation.
+        People can use any device with a web browser to control and/or view
+        visual outputs. The controller has two options: gif mode and abstract
+        visual mode. Anyone can change the gif by submitting keywords or change
+        the abstract visuals by selecting shapes and colors.
+        <br></br>
+        <br></br>
+        RESTful API server made with Node.js. Visuals created with p5.js and Giphy API.<br></br>
+        <br></br>
+        <a href="https://github.com/miamiww/VJmachine">Code</a> &{" "}
+        <a href="https://itp.beverlychou.com/restful-control-surface-design-specification/">
+          API specification
+        </a>
+        .<br></br>
+        <br></br>
+        Made in collaboration with{" "}
+        <a href="https://ellennickles.site">Ellen Nickles</a>,{" "}
+        <a href="http://alden.website/">Alden Jones</a>, and{" "}
+        <a href="https://www.ridwanmadon.com/">Ridwan Madon</a>.
       </span>
     ),
   },

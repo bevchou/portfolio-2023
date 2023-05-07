@@ -21,6 +21,6 @@ export const contactInfo = [
 ];
 
 export const aboutText =
-  "I'm a creative technologist and designer. Currently, I'm a design technologist at frog. Previously, I worked at Intuit and designed custom speakers at Leon. I also got an MPS at NYU's Interactive Telecommunications Program and a BSE in mechanical engineering at the University of Michigan. I am interested in tangible interfaces, ethical technology, overlooked infrastructures, Josef Albers's color theory, electronic device prototyping, Michigan football, and slow jams.";
+  <span>I'm a creative technologist and designer. Currently, I'm a design technologist at frog. Previously, I worked at Intuit and designed custom speakers at Leon. I also got an MPS at NYU's Interactive Telecommunications Program and a BSE in mechanical engineering at the University of Michigan. <br></br><br></br>I am interested in tangible interfaces, ethical technology, overlooked infrastructures, Josef Albers's color theory, electronic device prototyping, and slow jams.</span>;
 
   export const photo = "/bev.png";
