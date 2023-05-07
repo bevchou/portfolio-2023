@@ -1,40 +1,4 @@
 export const workData = {
-  tangibleController: {
-    name: "Tangible Controllers",
-    tags: ["physical interface", "arduino"],
-    year: 2023,
-    images: [
-      { url: "https://placekitten.com/200/300", caption: "wow" },
-      {
-        url: "https://placekitten.com/600/300",
-        caption: "here's a longer one lolol ",
-      },
-      {
-        url: "https://placekitten.com/400/800",
-        caption: "OOOOOOOO WOWOWOWOWOWOWOWOWOWOWOWO",
-      },
-      { url: "https://placekitten.com/400/300", caption: "" },
-    ],
-    text: (
-      <span>
-        I prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.I
-        prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.I
-        prototyped a series of functional physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP). Click on the images to learn more about each controller.
-      </span>
-    ),
-  },
   visualMode: {
     name: "Visual Mode",
     tags: ["interactive web", "node.js"],
@@ -63,6 +27,9 @@ export const workData = {
     ],
     text: (
       <span>
+        Play with the <a href="https://visualmode.space/command/">controller</a>{" "}
+        and <a href="https://visualmode.space/">view it here</a>!<br></br>
+        <br></br>
         Originally designed to be a collective{" "}
         <a href="https://en.wikipedia.org/wiki/VJing">VJing</a> experience for
         parties, Visual Mode is a web app and a pop-up interactive installation.
@@ -88,18 +55,53 @@ export const workData = {
       </span>
     ),
   },
+  controllers: {
+    name: "Tangible Controllers",
+    icon: "/projects/controllers/icon.jpg",
+    tags: ["physical interface", "arduino"],
+    year: 2018,
+    images: [
+      { url: "/projects/controllers/lightcontroldemo.gif", caption: "Magnetic switches allow users to magically turn on/off and dim a grid of DMX lights based on the position of game pieces. Connects via WiFi." },
+      {
+        url: "/projects/controllers/gamecontrol-gif2.gif",
+        caption: "This plug and play controller connects via USB to give users precise control over their spaceship when playing Lunar Lander.",
+      },
+      {
+        url: "/projects/controllers/MIDI-gif.gif",
+        caption: "Pull chains let users build sustained chords and a springy slider allows for pitch bend effects on any MIDI synth. Made in collaboration with Anthony Bui.",
+      },
+      { url: "/projects/controllers/websocket-controller.gif", caption: "This WiFi connected game controller gives user more precision when moving their paddle vertically and horizontally in a multiplayer pong style game." },
+    ],
+    text: (
+      <span>
+      I prototyped a series of functional physical interfaces that communicate with other devices. I built these projects using Arduino microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI, TCP).
+      <br></br><br></br>
+      More detail on each controller:
+      <ul>
+        <li><a target="_blank" href="https://itp.beverlychou.com/lighting-controller-interface/">DMX light</a></li>
+        <li><a target="_blank" href="http://itp.beverlychou.com/lunar-lander-controller/">HID game</a></li>
+        <li><a target="_blank" href="http://itp.beverlychou.com/midi-pull-chain-interface/">MIDI synth</a></li>
+        <li><a target="_blank" href="https://itp.beverlychou.com/websocket-game-controller/">Wifi game</a></li>
+      </ul>
+      </span>
+    ),
+  },
+  
   aros: {
     name: "Aros for Visually Impaired Cooks",
+    icon: "/projects/aros/icon.jpg",
     tags: ["product design", "accessibility"],
     year: 2015,
   },
   soundTent: {
     name: "Sound Tent",
+    icon: "/projects/soundTent/icon.jpg",
     tags: ["physical interface", "arduino"],
     year: 2018,
   },
   selfie: {
     name: "Selfie Portaits",
+    icon: "/projects/selfie/icon.jpg",
     tags: ["interactive web", "p5.js"],
     year: 2018,
   },
