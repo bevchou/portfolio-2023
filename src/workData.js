@@ -39,17 +39,27 @@ export const workData = {
     name: "Visual Mode",
     tags: ["interactive web", "node.js"],
     year: 2018,
+    iconImg: "/projects/visualMode/icon.jpg",
     images: [
-      { url: "https://placekitten.com/200/300", caption: "wow" },
       {
-        url: "https://placekitten.com/600/300",
-        caption: "here's a longer one lolol ",
+        url: "//player.vimeo.com/video/311760698?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
       },
       {
-        url: "https://placekitten.com/400/800",
-        caption: "OOOOOOOO WOWOWOWOWOWOWOWOWOWOWOWO",
+        url: "/projects/visualMode/2.jpg",
+        caption: "view for the controller",
       },
-      { url: "https://placekitten.com/400/300", caption: "" },
+      {
+        url: "/projects/visualMode/3.jpg",
+        caption: "",
+      },
+      { url: "/projects/visualMode/4.jpg", caption: "" },
+      {
+        url: "//player.vimeo.com/video/310251246?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
+      },
     ],
     text: (
       <span>
@@ -62,7 +72,8 @@ export const workData = {
         the abstract visuals by selecting shapes and colors.
         <br></br>
         <br></br>
-        RESTful API server made with Node.js. Visuals created with p5.js and Giphy API.<br></br>
+        RESTful API server made with Node.js. Visuals created with p5.js and
+        Giphy API.<br></br>
         <br></br>
         <a href="https://github.com/miamiww/VJmachine">Code</a> &{" "}
         <a href="https://itp.beverlychou.com/restful-control-surface-design-specification/">
