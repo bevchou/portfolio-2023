@@ -48,6 +48,7 @@ const Work = ({
             <WorkItem
               key={item.name}
               name={item.name}
+              icon={item.icon}
               tags={item.tags}
               year={item.year}
               selected={false}
@@ -73,6 +74,7 @@ const Work = ({
           <WorkItem
             key={getItemData()?.name}
             name={getItemData()?.name}
+            icon={getItemData()?.icon}
             tags={getItemData()?.tags}
             year={getItemData()?.year}
             selected={true}

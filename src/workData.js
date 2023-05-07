@@ -39,11 +39,11 @@ export const workData = {
     name: "Visual Mode",
     tags: ["interactive web", "node.js"],
     year: 2018,
-    iconImg: "/projects/visualMode/icon.jpg",
+    icon: "/projects/visualMode/icon.jpg",
     images: [
       {
         url: "//player.vimeo.com/video/311760698?title=0&byline=0&portrait=0",
-        caption: "",
+        caption: "at the itp show",
         vimeo: true,
       },
       {
@@ -57,7 +57,7 @@ export const workData = {
       { url: "/projects/visualMode/4.jpg", caption: "" },
       {
         url: "//player.vimeo.com/video/310251246?title=0&byline=0&portrait=0",
-        caption: "",
+        caption: "view for audience",
         vimeo: true,
       },
     ],
