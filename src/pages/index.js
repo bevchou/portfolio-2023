@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Head from "next/head";
 
 import { workData } from "@/workData";
@@ -29,8 +29,13 @@ export default function Home() {
   const [itemState, setItemState] = useState(null);
 
   // update which portfolio page is showing
+  const mainRef = useRef();
   const updateSelectedItem = (newItem) => {
     setItemState(newItem);
+    // mainRef.current.scrollTo({ top: 0, behavior: "instant" });
+    // // setTimeout(() => {
+     
+    // // }, "300");
   };
 
   // get data for each portfolio piece
@@ -46,7 +51,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`main`}>
+      <main className={`main`} ref={mainRef}>
         <Header
           updatePage={updatePage}
           pageState={pageState}

@@ -61,8 +61,8 @@ const ImageScroller = ({ imgSrcs }) => {
               height="100%"
               src={url}
               title="YouTube video player"
-              frameborder="0"
-              allowfullscreen
+              frameBorder="0"
+              allowFullScreen
             ></iframe>
           </div>
         );
@@ -80,8 +80,8 @@ const ImageScroller = ({ imgSrcs }) => {
           </div>
           {renderMedia(data.type, data.url)}
           <div className="caption">{data.caption} </div>
-          {index === 0 && (
-            <div className="mobileNote caption">scroll right+left</div>
+          {(index === 0) && (imgSrcs?.length > 1) && (
+            <div className={`mobileNote caption`}>side scroll for more</div>
           )}
         </div>
       ))}

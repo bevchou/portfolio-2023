@@ -26,7 +26,7 @@ export const workData = {
       },
       {
         url: "/projects/fwrd/3.jpg",
-        caption: "experiments for board",
+        caption: "experiments for the board",
       },
       {
         url: "/projects/fwrd/4.png",
