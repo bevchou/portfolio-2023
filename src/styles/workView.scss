@@ -3,6 +3,7 @@
   border-top: none;
   flex: 1;
   display: flex;
+  // height: 0;
   .imageContainer {
     border-right: $border-style;
     width: 50%;
@@ -32,6 +33,7 @@
 
   /* Phones */
   @media (max-width: $sm-mobile-max) {
+    height: 100%;
     border: none;
     flex-direction: column;
     padding-bottom: $extra-mobile-bottom-padding;

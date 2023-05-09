@@ -31,6 +31,9 @@
   @media (max-width: $sm-mobile-max) {
     width: 100vw;
     // height: 100%;
+    &.fixedHeight {
+      height: auto;
+    }
   }
 
   // animations
