@@ -69,7 +69,7 @@ export const workData = {
         </a>
         ,{" "}
         <a target="_blank" href="http://alden.website/">
-          Alden Jones
+          Thea Jones
         </a>
         , and{" "}
         <a target="_blank" href="https://www.ridwanmadon.com/">
@@ -152,83 +152,33 @@ export const workData = {
       </span>
     ),
   },
-  aros: {
-    name: "Spice Dispenser for Visually Impaired",
-    icon: "/projects/aros/icon.jpg",
-    tags: ["product design", "accessibility"],
-    year: 2015,
+  cats: {
+    name: "Cats Are Liquid",
+    icon: "/projects/cats/icon.jpg",
+    tags: ["interactive web", "meow"],
+    year: 2018,
     images: [
       {
-        url: "/projects/aros/final1.jpg",
-        caption:
-          "Identify spices using braille labels and/or textures on the top and body of the dispenser. Magnetic strips help to feel where to place each dispenser and prevent them from tipping over.",
-      },
-      {
-        url: "/projects/aros/howto1.jpg",
-        caption:
-          "Locate the tab at the top of the dispenser and push it up to open. Insert the funnel by aligning bright green sections.",
-      },
-      {
-        url: "/projects/aros/howto2.jpg",
-        caption: "Pour in spices. Remove funnel and close lid.",
-      },
-      {
-        url: "/projects/aros/howto3.jpg",
-        caption:
-          "Each button push dispenses 1/4 teaspoon of spices into a storage chamber. Push the button as many times as necessary to get the desired amount.",
-      },
-      {
-        url: "/projects/aros/howto4.jpg",
-        caption:
-          "Hold Aros over your cooking, then open the tab at the bottom to release spices.",
-      },
-      {
-        url: "/projects/aros/market1.png",
-        caption: "Competition analysis position plot",
-      },
-      {
-        url: "/projects/aros/process1.jpg",
-        caption:
-          "Alpha prototypes for usability testing and Kansei Engineering Analysis",
-      },
-      {
-        url: "/projects/aros/usertest1.jpg",
-        caption: "Usability testing in progress",
-      },
-      {
-        url: "/projects/aros/processvid",
-        caption: "Force analysis simulation animation in ADAMS",
-      },
-      {
-        url: "/projects/aros/engin1.png",
-        caption: "Force analysis simulation results",
-      },
-      {
-        url: "/projects/aros/process2.jpg",
-        caption: "Internal parts in proof-of-concept",
+        url: "https://player.vimeo.com/video/264161984?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
       },
     ],
     text: (
       <span>
-        Aros is a spice dispenser designed for visually impaired people to
-        accurately dispense spices in 1/4 teaspoon quantities. Intended to be an
-        intuitive experience for users with limited or no vision, Aros has
-        tactile indicators, high contrast colors, and a unique form to take into
-        account that visually impaired users tend to use their fingers rather
-        than their thumbs.
-        <br></br> <br></br>
-        <u>My Role:</u> I played a large role in identifying the user scenario,
-        market research, and competition analysis. I did the engineering for the
-        measurement and dispensing mechanism and conducted force analyses on all
-        mechanical components. I also created build plans for injection mold
-        mass manufacturing and aided in the fabrication of the proof-of-concept.
-        <br></br> <br></br>The Aros proof-of-concept was fabricated from 3-D
-        printed ABS plastic and NinjaFlex, laser cut clear acrylic, steel pins,
-        a spring, and magnets.
-        <br></br> <br></br>
-        <u>The Aros team:</u> Beverly Chou (B.S.E. Mechanical Engineering),
-        Rohan Malpani (M.S. Human-Computer Interaction), Adam Rosekelly (M.S.
-        Architecture), and Matt Vedrin (M.S.E. Mechanical Engineering)
+        View project{" "}
+        <a
+          target="_blank"
+          href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html"
+        >
+          here
+        </a>
+        !<br></br> <br></br>
+        There is a rule of physics that says liquids are able to take the shape
+        of any container. Cats also follow this rule, and therefore are liquid.
+        I’m proving that it’s true, even in the browser. Q.E.D. You may need to
+        disable your popup blocker to view the demo. Works best on a desktop or
+        laptop.
       </span>
     ),
   },
@@ -346,33 +296,133 @@ export const workData = {
       </span>
     ),
   },
-  cats: {
-    name: "Cats Are Liquid",
-    icon: "/projects/cats/icon.jpg",
-    tags: ["interactive web", "meow"],
-    year: 2018,
+  tcflex: {
+    name: "Wall Bracket for SONOS Speakers",
+    icon: "/projects/tcflex/icon.jpg",
+    tags: ["product design", "design for manufacturability"],
+    year: 2016,
     images: [
       {
-        url: "https://player.vimeo.com/video/264161984?title=0&byline=0&portrait=0",
+        url: "/projects/tcflex/model.png",
         caption: "",
-        vimeo: true,
+      },
+      {
+        url: "/projects/tcflex/manual.jpg",
+        caption: "installation manual",
+      },
+      {
+        url: "/projects/tcflex/sketches.jpg",
+        caption: "early ideation sketches",
+      },
+      {
+        url: "/projects/tcflex/solidworks.png",
+        caption: "SolidWorks drawings of variations",
+      },
+      {
+        url: "/projects/tcflex/paperproto.jpg",
+        caption: "paper prototypes I made to test the fit on each speaker",
+      },
+
+      {
+        url: "/projects/tcflex/proto.jpg",
+        caption:
+          "sheet metal prototypes - the first one was too bulky (from left, 1st), the diagonal slots caused warping during the bending process (2nd), warping was grinded off during finishing (3rd), but this was too costly so I made the slots perpendicular to the edge (4th)",
       },
     ],
     text: (
       <span>
-        View project{" "}
-        <a
-          target="_blank"
-          href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html"
-        >
-          here
-        </a>
-        !<br></br> <br></br>
-        There is a rule of physics that says liquids are able to take the shape
-        of any container. Cats also follow this rule, and therefore are liquid.
-        I’m proving that it’s true, even in the browser. Q.E.D. You may need to
-        disable your popup blocker to view the demo. Works best on a desktop or
-        laptop.
+        The TcFLEX-SOLO is a bracket designed to mount the Sonos Play:1 or
+        Play:3 directly to the wall. This articulating bracket also allows the
+        SONOS speaker to be mounted in either a horizontal or vertical position
+        for optimal placement in any room. Unlike other competitors like Flexson
+        and Cavus, the TcFLEX-SOLO conceals the outlet and power cord.
+        <br></br>
+        <br></br>
+        <u>My Role:</u> I was tasked to develop a low profile wall bracket that
+        could fit both the SONOS Play:1 and Play:3, while concealing power cords
+        and utilizing already in-stock parts. I did all design and validation on
+        the sheet metal parts and the install instructions. To lower costs, I
+        also simplified existing designs for the articulating mount parts.
+      </span>
+    ),
+  },
+  aros: {
+    name: "Spice Dispenser for Visually Impaired",
+    icon: "/projects/aros/icon.jpg",
+    tags: ["product design", "accessibility"],
+    year: 2015,
+    images: [
+      {
+        url: "/projects/aros/final1.jpg",
+        caption:
+          "Identify spices using braille labels and/or textures on the top and body of the dispenser. Magnetic strips help to feel where to place each dispenser and prevent them from tipping over.",
+      },
+      {
+        url: "/projects/aros/howto1.jpg",
+        caption:
+          "Locate the tab at the top of the dispenser and push it up to open. Insert the funnel by aligning bright green sections.",
+      },
+      {
+        url: "/projects/aros/howto2.jpg",
+        caption: "Pour in spices. Remove funnel and close lid.",
+      },
+      {
+        url: "/projects/aros/howto3.jpg",
+        caption:
+          "Each button push dispenses 1/4 teaspoon of spices into a storage chamber. Push the button as many times as necessary to get the desired amount.",
+      },
+      {
+        url: "/projects/aros/howto4.jpg",
+        caption:
+          "Hold Aros over your cooking, then open the tab at the bottom to release spices.",
+      },
+      {
+        url: "/projects/aros/market1.png",
+        caption: "Competition analysis position plot",
+      },
+      {
+        url: "/projects/aros/process1.jpg",
+        caption:
+          "Alpha prototypes for usability testing and Kansei Engineering Analysis",
+      },
+      {
+        url: "/projects/aros/usertest1.jpg",
+        caption: "Usability testing in progress",
+      },
+      {
+        url: "/projects/aros/processvid",
+        caption: "Force analysis simulation animation in ADAMS",
+      },
+      {
+        url: "/projects/aros/engin1.png",
+        caption: "Force analysis simulation results",
+      },
+      {
+        url: "/projects/aros/process2.jpg",
+        caption: "Internal parts in proof-of-concept",
+      },
+    ],
+    text: (
+      <span>
+        Aros is a spice dispenser designed for visually impaired people to
+        accurately dispense spices in 1/4 teaspoon quantities. Intended to be an
+        intuitive experience for users with limited or no vision, Aros has
+        tactile indicators, high contrast colors, and a unique form to take into
+        account that visually impaired users tend to use their fingers rather
+        than their thumbs.
+        <br></br> <br></br>
+        <u>My Role:</u> I played a large role in identifying the user scenario,
+        market research, and competition analysis. I did the engineering for the
+        measurement and dispensing mechanism and conducted force analyses on all
+        mechanical components. I also created build plans for injection mold
+        mass manufacturing and aided in the fabrication of the proof-of-concept.
+        <br></br> <br></br>The Aros proof-of-concept was fabricated from 3-D
+        printed ABS plastic and NinjaFlex, laser cut clear acrylic, steel pins,
+        a spring, and magnets.
+        <br></br> <br></br>
+        <u>The Aros team:</u> Beverly Chou (B.S.E. Mechanical Engineering),
+        Rohan Malpani (M.S. Human-Computer Interaction), Adam Rosekelly (M.S.
+        Architecture), and Matt Vedrin (M.S.E. Mechanical Engineering)
       </span>
     ),
   },
@@ -478,6 +528,67 @@ export const workData = {
         .<br></br> <br></br>
         <u>Makeathon Team:</u> Soona Amhaz, Sydney Bigelow, Anant Kesavan,
         Romina Potter, Liz Waldvogel, and Phillip Yang
+      </span>
+    ),
+  },
+  dch: {
+    name: "DCH Spark",
+    icon: "/projects/dch/icon.jpg",
+    tags: ["workshop"],
+    year: 2013,
+    images: [
+      {
+        url: "/projects/dch/Housing4.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/Housing2.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/Housing3.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/MagnetSpeaker1.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/MagnetSpeaker2.jpg",
+        caption: "",
+      },
+
+      {
+        url: "/projects/dch/DCHSparkGuide2.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/DCHSparkGuide1.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/dch/DCHSparkLogoInvert.jpg",
+        caption: "",
+      },
+    ],
+    text: (
+      <span>
+        What makes a person go from showing initial interest to taking that next
+        step? We wanted to encourage students at Detroit Community High School
+        to ask the same question.
+        <br></br>
+        <br></br> DCH Spark is a series of workshops that aims to build off of
+        students' passion for music and working with their hands by providing
+        resources and a space where students can explore the intersection of
+        music and technology. The projects we developed for DCH Spark involve
+        creating speakers out of magnets and a styrofoam cup and building a
+        finished wooden speaker. We want this program to be a spark for
+        students, igniting a passion for continuous learning and lifelong
+        curiosity.
+        <br></br>
+        <br></br>
+        <u>The DCH Spark team:</u> Eliza Bara, Beverly Chou, Kathleen Chou, and
+        Michael Wang.
       </span>
     ),
   },
