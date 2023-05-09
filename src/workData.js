@@ -27,31 +27,55 @@ export const workData = {
     ],
     text: (
       <span>
-        Play with the <a href="https://visualmode.space/command/">controller</a>{" "}
-        and <a href="https://visualmode.space/">view it here</a>!<br></br>
+        Play with the{" "}
+        <a target="_blank" href="https://visualmode.space/command/">
+          controller
+        </a>{" "}
+        and{" "}
+        <a target="_blank" href="https://visualmode.space/">
+          view it here
+        </a>
+        !<br></br>
         <br></br>
         Originally designed to be a collective{" "}
-        <a href="https://en.wikipedia.org/wiki/VJing">VJing</a> experience for
-        parties, Visual Mode is a web app and a pop-up interactive installation.
-        People can use any device with a web browser to control and view visual
-        outputs. The controller has two options: gif mode and abstract visual
-        mode. Anyone can change the gif by submitting keywords or change the
-        abstract visuals by selecting shapes and colors.
+        <a target="_blank" href="https://en.wikipedia.org/wiki/VJing">
+          VJing
+        </a>{" "}
+        experience for parties, Visual Mode is a web app and a pop-up
+        interactive installation. People can use any device with a web browser
+        to control and view visual outputs. The controller has two options: gif
+        mode and abstract visual mode. Anyone can change the gif by submitting
+        keywords or change the abstract visuals by selecting shapes and colors.
         <br></br>
         <br></br>
         RESTful API server made with Node.js. Visuals created with p5.js and
         Giphy API.<br></br>
         <br></br>
-        <a href="https://github.com/miamiww/VJmachine">Code</a> &{" "}
-        <a href="https://itp.beverlychou.com/restful-control-surface-design-specification/">
+        <a target="_blank" href="https://github.com/miamiww/VJmachine">
+          Code
+        </a>{" "}
+        &{" "}
+        <a
+          target="_blank"
+          href="https://itp.beverlychou.com/restful-control-surface-design-specification/"
+        >
           API specification
         </a>
         .<br></br>
         <br></br>
         Made in collaboration with{" "}
-        <a href="https://ellennickles.site">Ellen Nickles</a>,{" "}
-        <a href="http://alden.website/">Alden Jones</a>, and{" "}
-        <a href="https://www.ridwanmadon.com/">Ridwan Madon</a>.
+        <a target="_blank" href="https://ellennickles.site">
+          Ellen Nickles
+        </a>
+        ,{" "}
+        <a target="_blank" href="http://alden.website/">
+          Alden Jones
+        </a>
+        , and{" "}
+        <a target="_blank" href="https://www.ridwanmadon.com/">
+          Ridwan Madon
+        </a>
+        .
       </span>
     ),
   },
@@ -264,7 +288,7 @@ export const workData = {
         create more sound, the lights around them get brighter.
         <br></br>
         <br></br> Read more about the development and user testing process on my{" "}
-        <a href="http://itp.beverlychou.com/categories/p-comp/">
+        <a target="_blank" href="http://itp.beverlychou.com/categories/p-comp/">
           physical computing blog here
         </a>
         .<br></br>
@@ -294,8 +318,11 @@ export const workData = {
     ],
     text: (
       <span>
-        View project <a href="https://beverlychou.com/selfieportrait/">here</a>!
-        <br></br> <br></br>
+        View project{" "}
+        <a target="_blank" href="https://beverlychou.com/selfieportrait/">
+          here
+        </a>
+        !<br></br> <br></br>
         Historically, artists have used self-portraits as a way to express
         different facets of their identities. Now selfies and filters are often
         used to create illusions or sell things to us. I invite you to create a
@@ -303,9 +330,19 @@ export const workData = {
         yourself. Instead of beautifying or morphing your face, you will add to
         your image through self reflection.
         <br></br>
-        <br></br> Made using <a href="https://p5js.org">p5.js</a>,{" "}
-        <a href="https://github.com/auduno/clmtrackr/">clmtrackr</a>, and the{" "}
-        <a href="https://www.flickr.com/services/api/">flickr api</a>.
+        <br></br> Made using{" "}
+        <a target="_blank" href="https://p5js.org">
+          p5.js
+        </a>
+        ,{" "}
+        <a target="_blank" href="https://github.com/auduno/clmtrackr/">
+          clmtrackr
+        </a>
+        , and the{" "}
+        <a target="_blank" href="https://www.flickr.com/services/api/">
+          flickr api
+        </a>
+        .
       </span>
     ),
   },
@@ -324,7 +361,10 @@ export const workData = {
     text: (
       <span>
         View project{" "}
-        <a href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html">
+        <a
+          target="_blank"
+          href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html"
+        >
           here
         </a>
         !<br></br> <br></br>
@@ -382,21 +422,60 @@ export const workData = {
     ],
     text: (
       <span>
-        Makeathon is an annual 36-hour interdisciplinary physical product design
-        competition that brings college students from all disciplines together
-        to turn their ideas into functional prototypes. At the first Makeathon,
-        80 students from 6 colleges utilized rapid prototyping tools at TechShop
-        Detroit to build a chair for arthritis sufferers, an extendable
-        skateboard, modular dorm furniture, and more. At Makeathon's conclusion,
-        teams pitched their product to a panel of experts and won $1,000 in
-        awards.
-        <br></br> <br></br>
+        Makeathon is an annual 36-hour physical product design competition that
+        brings college students from all disciplines together to turn their
+        ideas into functional prototypes. At the first Makeathon, 80 students
+        from 6 colleges utilized rapid prototyping tools at TechShop Detroit to
+        build a chair for arthritis sufferers, an extendable skateboard, modular
+        dorm furniture, and more. At Makeathon's conclusion, teams pitched their
+        product to a panel of experts and won $1,000 in awards. Check out some
+        of the press:
+        <ul>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.concentratemedia.com/features/makeathon20140269.aspx"
+            >
+              Maker Madness / Concentrate Media
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://www.mlive.com/news/ann-arbor/index.ssf/2014/01/a2awesome_foundation_provides.html"
+            >
+              A2Awesome Foundation provides more than 20 $1,000 grants to
+              innovators / MLive
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://markmaynard.com/2014/01/u-m-undergrads-to-launch-makeathon-with-a2awesome-grant/"
+            >
+              U-M undergrads to launch Makeathon with A2Awesome grant / Mark
+              Maynard
+            </a>
+          </li>
+          <li>
+            <a
+              target="_blank"
+              href="http://statenews.com/article/2014/02/first-makeathon-competition-at-u-m-to-get-students-creativity"
+            >
+              First Makeathon competition at U-M to get students' creativity /
+              The State News
+            </a>
+          </li>
+        </ul>
+        <br></br>
         <u>My Role:</u> I started and directed the first annual Makeathon, which
         took place on February 21st to 23rd, 2014. I led a team of 5 to organize
         event details and fundraise $27k + sponsorships. Makeathon continues
         every year through the University of Michigan student organization{" "}
-        <a href="http://mpowered.umich.edu">MPowered Entrepreneurship</a>.
-        <br></br> <br></br>
+        <a target="_blank" href="http://mpowered.umich.edu">
+          MPowered Entrepreneurship
+        </a>
+        .<br></br> <br></br>
         <u>Makeathon Team:</u> Soona Amhaz, Sydney Bigelow, Anant Kesavan,
         Romina Potter, Liz Waldvogel, and Phillip Yang
       </span>
