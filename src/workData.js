@@ -1,4 +1,137 @@
 export const workData = {
+  fwrd: {
+    name: "Race to Hunts Point",
+    icon: "/projects/fwrd/icon.jpg",
+    tags: ["game design, fabrication"],
+    year: 2019,
+    images: [
+      {
+        url: "https://www.youtube-nocookie.com/embed/K5o99VtoJb8",
+        caption: "about the game",
+        type: "youtube",
+      },
+      {
+        url: "https://www.youtube.com/embed/xX8ZAaVrbO0",
+        caption: "FWRD Fellowship program overview",
+        type: "youtube",
+      },
+
+      {
+        url: "/projects/fwrd/1.jpg",
+        caption: "final board game build",
+      },
+      {
+        url: "/projects/fwrd/2.jpg",
+        caption: "close up of the cards",
+      },
+      {
+        url: "/projects/fwrd/3.jpg",
+        caption: "experiments for board",
+      },
+      {
+        url: "/projects/fwrd/4.png",
+        caption: "playtesting a prototype"
+      },
+      {
+        url: "/projects/fwrd/5.png",
+        caption: "playtesting a prototype",
+      },
+    ],
+    text: (
+      <span>
+        Race to Hunts Point is a board game for high school aged students that
+        aims to demystify the food system and answer questions like - Where does
+        our food come from? How does it get to the grocery store? Why is it
+        possible to have blueberries year round?
+        <br></br>
+        <br></br>
+        We were inspired by the complex distribution system within NYC and Hunts
+        Point, which is a major food distribution point in the city. We decided
+        to zoom out and focus on North + South America so we could capture part
+        of a global system.
+        <br></br>
+        <br></br>
+        The game emulates the process of managing growing produce and then moving the food to NYC. Pathways on the board are based on actual shipping routes. Resource management is key in the game. Players have to think about time (seasonality + perishability of foods, shipping times), resources (money, trading with players), technology (pay to increase efficiency at farming and/or shipping phases), and supply + demand at the final destination. 
+        <br></br>
+        <br></br>
+        We quickly iterated through several different versions of the game, making sure to playtest with high schoolers and get feedback from game designers along the way. Throughout we explored how to make the visual design reflect the textures and topographies of farms and spaces that food moves through on its way to us. For the board we experimented with different materials and used rapid prototyping tools like laser cutters, CNC (Shapeoko + Othermill), and 3D printers.
+        <br></br>
+        <br></br>
+        <u>Co-designers:</u> <a target="_blank" href="https://www.behance.net/alamaroliv8598">Angel Lamar</a> and{" "}
+        <a target="_blank" href="https://www.lilianyihsuanlin.com/">
+          Yi-Hsuan Lin
+        </a>
+        <br></br>
+        <br></br>
+        This project was completed in 3 months through the{" "}
+        <a
+          target="_blank"
+          href="https://brooklynresearch.org/2019/03/01/summer-internship-2019/"
+        >
+          FWRD Fellowship
+        </a>{" "}
+        at{" "}
+        <a target="_blank" href="https://www.tomorrow-lab.com/">
+          Tomorrow Lab
+        </a>{" "}
+        and{" "}
+        <a target="_blank" href="https://brooklynresearch.org/">
+          Brookyn Research
+        </a>
+        .
+      </span>
+    ),
+  },
+  slownet: {
+    name: "Slow Net",
+    tags: ["speculative networks", "concept art lol"],
+    year: 2019,
+    icon: "/projects/slownet/icon.jpg",
+    images: [
+      {
+        url: "/projects/slownet/1.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/slownet/slow-sign.jpg",
+        caption: "",
+      },
+      {
+        url: "https://player.vimeo.com/video/336836245?h=f0636b4786",
+        caption: "itp thesis week",
+        type: "vimeo",
+      },
+      {
+        url: "/projects/slownet/turtle-mail.jpg",
+        caption: "",
+      },
+    ],
+    text: (
+      <span>
+        Check out the{" "}
+        <a target="_blank" href="https://slownet.work/">
+          Slow Net
+        </a>{" "}
+        site.
+        <br></br>
+        <br></br>
+        Slow Net is a series of experiments that explore how slow networks can
+        be used to protect against data-collecting entities that threaten our
+        autonomy and influence our identities. It consists of (1) A zine called
+        A Quick Guide to the Slow Net that provides context about the problems
+        underpinning online data collection, (2) an online messaging
+        application, Slow Chat, that forces users to write longer messages and
+        wait longer between messages, and (3) a router that slows down your
+        internet experience.
+        <br></br>
+        <br></br>I also showed Slow Net at{" "}
+        <a target="_blank" href="https://www.instagram.com/p/B32VGbBlE2r/">
+          Radical Networks
+        </a>{" "}
+        in 2019.
+      </span>
+    ),
+  },
   visualMode: {
     name: "Visual Mode",
     tags: ["interactive web", "node.js"],
@@ -8,7 +141,7 @@ export const workData = {
       {
         url: "//player.vimeo.com/video/311760698?title=0&byline=0&portrait=0",
         caption: "at the itp show",
-        vimeo: true,
+        type: "vimeo",
       },
       {
         url: "/projects/visualMode/2.jpg",
@@ -22,7 +155,7 @@ export const workData = {
       {
         url: "//player.vimeo.com/video/310251246?title=0&byline=0&portrait=0",
         caption: "view for audience",
-        vimeo: true,
+        type: "vimeo",
       },
     ],
     text: (
@@ -161,7 +294,7 @@ export const workData = {
       {
         url: "https://player.vimeo.com/video/264161984?title=0&byline=0&portrait=0",
         caption: "",
-        vimeo: true,
+        type: "vimeo",
       },
     ],
     text: (
@@ -191,12 +324,12 @@ export const workData = {
       {
         url: "//player.vimeo.com/video/249473264?byline=0&portrait=0",
         caption: "",
-        vimeo: true,
+        type: "vimeo",
       },
       {
         url: "//player.vimeo.com/video/249264972?byline=0&portrait=0",
         caption: "at the itp show",
-        vimeo: true,
+        type: "vimeo",
       },
       {
         url: "/projects/soundTent/final1.jpg",
@@ -263,7 +396,7 @@ export const workData = {
       {
         url: "https://player.vimeo.com/video/244794385?title=0&byline=0&portrait=0",
         caption: "",
-        vimeo: true,
+        type: "vimeo",
       },
     ],
     text: (
@@ -469,11 +602,24 @@ export const workData = {
         new design allows the light to sit on a surface at varying angles.
         <br></br> <br></br>This was my process:
         <ul>
-        <li><u>Ideation:</u> Sketch and create foam models.</li>
-        <li><u>Master Part:</u> Hand build MDF buck and vacuum form polystyrene plastic. Add supports and bosses to accommodate internal electronics.</li>
-        <li><u>Two-Part Silicon Mold:</u> First cast the exterior of the master part (blue), then the interior (clear).</li>
-        <li><u>Reproductions:</u> Inject urethane into silicon mold by hand.</li>
-        <li><u>Finish:</u> Sand, paint, and assemble new part to original parts.</li>
+          <li>
+            <u>Ideation:</u> Sketch and create foam models.
+          </li>
+          <li>
+            <u>Master Part:</u> Hand build MDF buck and vacuum form polystyrene
+            plastic. Add supports and bosses to accommodate internal
+            electronics.
+          </li>
+          <li>
+            <u>Two-Part Silicon Mold:</u> First cast the exterior of the master
+            part (blue), then the interior (clear).
+          </li>
+          <li>
+            <u>Reproductions:</u> Inject urethane into silicon mold by hand.
+          </li>
+          <li>
+            <u>Finish:</u> Sand, paint, and assemble new part to original parts.
+          </li>
         </ul>
       </span>
     ),
@@ -525,7 +671,7 @@ export const workData = {
       {
         url: "//player.vimeo.com/video/89370226?title=0&byline=0&portrait=0",
         caption: "",
-        vimeo: true,
+        type: "vimeo",
       },
       {
         url: "/projects/makeathon/1.jpg",

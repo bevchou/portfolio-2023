@@ -48,6 +48,12 @@
       margin: 0 40px;
       flex: 1;
     }
+    .youtube {
+      width: 100%;
+      min-height: 200px;
+      height: 50%;
+      max-height: 400px;
+    }
     img {
       object-fit: contain;
       max-height: 75%;
