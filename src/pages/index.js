@@ -32,10 +32,7 @@ export default function Home() {
   const mainRef = useRef();
   const updateSelectedItem = (newItem) => {
     setItemState(newItem);
-    // mainRef.current.scrollTo({ top: 0, behavior: "instant" });
-    // // setTimeout(() => {
-     
-    // // }, "300");
+    mainRef.current.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // get data for each portfolio piece

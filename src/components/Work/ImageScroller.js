@@ -39,7 +39,7 @@ const ImageScroller = ({ imgSrcs }) => {
     switch (type) {
       case "vimeo":
         return (
-          <div className="vimeo">
+          <div className="embedVideo">
             <iframe
               src={url}
               frameBorder="0"
@@ -55,10 +55,15 @@ const ImageScroller = ({ imgSrcs }) => {
         );
       case "youtube":
         return (
-          <div className="youtube">
+          <div className="embedVideo">
             <iframe
-              width="100%"
-              height="100%"
+              style={{
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+              }}
               src={url}
               title="YouTube video player"
               frameBorder="0"
