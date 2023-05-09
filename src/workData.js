@@ -33,10 +33,10 @@ export const workData = {
         Originally designed to be a collective{" "}
         <a href="https://en.wikipedia.org/wiki/VJing">VJing</a> experience for
         parties, Visual Mode is a web app and a pop-up interactive installation.
-        People can use any device with a web browser to control and view
-        visual outputs. The controller has two options: gif mode and abstract
-        visual mode. Anyone can change the gif by submitting keywords or change
-        the abstract visuals by selecting shapes and colors.
+        People can use any device with a web browser to control and view visual
+        outputs. The controller has two options: gif mode and abstract visual
+        mode. Anyone can change the gif by submitting keywords or change the
+        abstract visuals by selecting shapes and colors.
         <br></br>
         <br></br>
         RESTful API server made with Node.js. Visuals created with p5.js and
@@ -84,11 +84,10 @@ export const workData = {
     ],
     text: (
       <span>
-        I made a series of physical interfaces that communicate
-        with other devices. I built these projects using Arduino
-        microcontrollers (MKR1000, Micro, Uno, ESP8266), a variety of analog and
-        digital sensors, and different data protocols (sACN/DMX, HID/USB, MIDI,
-        TCP).
+        I made a series of physical interfaces that communicate with other
+        devices. I built these projects using Arduino microcontrollers (MKR1000,
+        Micro, Uno, ESP8266), a variety of analog and digital sensors, and
+        different data protocols (sACN/DMX, HID/USB, MIDI, TCP).
         <br></br>
         <br></br>
         More detail on each controller:
@@ -187,12 +186,12 @@ export const workData = {
     ],
     text: (
       <span>
-        Aros is a spice dispenser designed for visually impaired
-        people to accurately dispense spices in 1/4 teaspoon quantities.
-        Intended to be an intuitive experience for users with limited or no
-        vision, Aros has tactile indicators, high contrast colors, and a unique
-        form to take into account that visually impaired users tend to use their
-        fingers rather than their thumbs.
+        Aros is a spice dispenser designed for visually impaired people to
+        accurately dispense spices in 1/4 teaspoon quantities. Intended to be an
+        intuitive experience for users with limited or no vision, Aros has
+        tactile indicators, high contrast colors, and a unique form to take into
+        account that visually impaired users tend to use their fingers rather
+        than their thumbs.
         <br></br> <br></br>
         <u>My Role:</u> I played a large role in identifying the user scenario,
         market research, and competition analysis. I did the engineering for the
@@ -285,6 +284,122 @@ export const workData = {
     name: "Selfie Portaits",
     icon: "/projects/selfie/icon.jpg",
     tags: ["interactive web", "p5.js"],
+    year: 2017,
+    images: [
+      {
+        url: "https://player.vimeo.com/video/244794385?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
+      },
+    ],
+    text: (
+      <span>
+        View project <a href="https://beverlychou.com/selfieportrait/">here</a>!
+        <br></br> <br></br>
+        Historically, artists have used self-portraits as a way to express
+        different facets of their identities. Now selfies and filters are often
+        used to create illusions or sell things to us. I invite you to create a
+        selfie portrait with your webcam by answering simple questions about
+        yourself. Instead of beautifying or morphing your face, you will add to
+        your image through self reflection.
+        <br></br>
+        <br></br> Made using <a href="https://p5js.org">p5.js</a>,{" "}
+        <a href="https://github.com/auduno/clmtrackr/">clmtrackr</a>, and the{" "}
+        <a href="https://www.flickr.com/services/api/">flickr api</a>.
+      </span>
+    ),
+  },
+  cats: {
+    name: "Cats Are Liquid",
+    icon: "/projects/cats/icon.jpg",
+    tags: ["interactive web", "meow"],
     year: 2018,
+    images: [
+      {
+        url: "https://player.vimeo.com/video/264161984?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
+      },
+    ],
+    text: (
+      <span>
+        View project{" "}
+        <a href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html">
+          here
+        </a>
+        !<br></br> <br></br>
+        There is a rule of physics that says liquids are able to take the shape
+        of any container. Cats also follow this rule, and therefore are liquid.
+        I’m proving that it’s true, even in the browser. Q.E.D. You may need to
+        disable your popup blocker to view the demo. Works best on a desktop or
+        laptop.
+      </span>
+    ),
+  },
+  makeathon: {
+    name: "Makeathon",
+    icon: "/projects/makeathon/icon.jpg",
+    tags: ["event planning"],
+    year: 2014,
+    images: [
+      {
+        url: "//player.vimeo.com/video/89370226?title=0&byline=0&portrait=0",
+        caption: "",
+        vimeo: true,
+      },
+      {
+        url: "/projects/makeathon/1.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/2.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/3.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/4.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/5.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/6.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/7.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/makeathon/8.jpg",
+        caption: "",
+      },
+    ],
+    text: (
+      <span>
+        Makeathon is an annual 36-hour interdisciplinary physical product design
+        competition that brings college students from all disciplines together
+        to turn their ideas into functional prototypes. At the first Makeathon,
+        80 students from 6 colleges utilized rapid prototyping tools at TechShop
+        Detroit to build a chair for arthritis sufferers, an extendable
+        skateboard, modular dorm furniture, and more. At Makeathon's conclusion,
+        teams pitched their product to a panel of experts and won $1,000 in
+        awards.
+        <br></br> <br></br>
+        <u>My Role:</u> I started and directed the first annual Makeathon, which
+        took place on February 21st to 23rd, 2014. I led a team of 5 to organize
+        event details and fundraise $27k + sponsorships. Makeathon continues
+        every year through the University of Michigan student organization{" "}
+        <a href="http://mpowered.umich.edu">MPowered Entrepreneurship</a>.
+        <br></br> <br></br>
+        <u>Makeathon Team:</u> Soona Amhaz, Sydney Bigelow, Anant Kesavan,
+        Romina Potter, Liz Waldvogel, and Phillip Yang
+      </span>
+    ),
   },
 };
