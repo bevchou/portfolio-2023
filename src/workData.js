@@ -326,7 +326,7 @@ export const workData = {
       {
         url: "/projects/tcflex/proto.jpg",
         caption:
-          "sheet metal prototypes - the first one was too bulky (from left, 1st), the diagonal slots caused warping during the bending process (2nd), warping was grinded off during finishing (3rd), but this was too costly so I made the slots perpendicular to the edge (4th)",
+          "sheet metal prototypes - the first one was too bulky (from left), the diagonal slots caused warping during the bending process (2nd), warping was grinded off during finishing (3rd), but this was too costly so I made the slots perpendicular to the edge (4th)",
       },
     ],
     text: (
@@ -423,6 +423,44 @@ export const workData = {
         <u>The Aros team:</u> Beverly Chou (B.S.E. Mechanical Engineering),
         Rohan Malpani (M.S. Human-Computer Interaction), Adam Rosekelly (M.S.
         Architecture), and Matt Vedrin (M.S.E. Mechanical Engineering)
+      </span>
+    ),
+  },
+  soap: {
+    name: "Olay Soap Dish",
+    icon: "/projects/soap/icon.jpg",
+    tags: ["product design, fabrication"],
+    year: 2015,
+    images: [
+      {
+        url: "/projects/soap/final1.jpg",
+        caption: "",
+      },
+
+      {
+        url: "/projects/soap/process1.jpeg",
+        caption: "some of the sketches",
+      },
+      {
+        url: "/projects/soap/process2.jpg",
+        caption: "foam models during ideation",
+      },
+      {
+        url: "/projects/soap/process3.jpg",
+        caption: "the MDF bucks and vacuum formed polystyrene pieces",
+      },
+      {
+        url: "/projects/soap/final2.jpg",
+        caption: "",
+      },
+    ],
+    text: (
+      <span>
+        For a case study, I designed and created a soap dish for Olay's Beauty
+        Bar. The soap dish is designed to fit with Olay's branding. It was also
+        tested to have a water tight seal and to minimize soap scum.
+        <br></br> <br></br>I went through the process of ideation, creating the
+        buck, vacuuming forming, and finishing the final pieces.
       </span>
     ),
   },
@@ -531,6 +569,7 @@ export const workData = {
       </span>
     ),
   },
+
   dch: {
     name: "DCH Spark",
     icon: "/projects/dch/icon.jpg",

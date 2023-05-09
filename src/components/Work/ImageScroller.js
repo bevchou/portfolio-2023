@@ -46,7 +46,7 @@ const ImageScroller = ({ imgSrcs }) => {
             <div className="vimeo">
               <iframe
                 src={data.url}
-                frameborder="0"
+                frameBorder="0"
                 style={{
                   position: "absolute",
                   top: 0,
