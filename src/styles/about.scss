@@ -62,6 +62,11 @@
     height: 40px;
   }
 
+  /* Big Desktop */
+  @media (min-width: $big-desktop-min) {
+    max-width: $max-container-width;
+  }
+
   /* Tablet and Smaller Desktop */
   @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
     .contact {

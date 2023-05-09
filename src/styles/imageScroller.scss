@@ -1,5 +1,5 @@
 .imageScroller {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100%;
   overflow: auto;
@@ -41,7 +41,7 @@
     .embedVideo {
       position: relative;
       display: block;
-      max-height: 75%;
+      max-height: 400px;
       min-height: 200px;
       width: 100%;
       height: 100%;
@@ -78,8 +78,8 @@
   /* Big Desktop */
   @media (min-width: $big-desktop-min) {
     .arrowNav {
-      left: calc((100% - #{$big-desktop-min}) * 0.5 + 154px);
-      width: 562px;
+      left: calc((100% - #{$big-desktop-min}) * 0.5 + 114px);
+      width: 602px;
     }
   }
   /* Phones */

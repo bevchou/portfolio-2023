@@ -1,7 +1,10 @@
 @import "./animations.scss";
 .work {
-  width: 100%;
-  height: 100%;
+  width: calc(100vw - 80px);
+  height: calc(100vh - 69px - 64px);
+  // max-height: 800px;
+  overflow: hidden;
+  // max-height: ;
   .nothing {
     height: 60px;
   }
@@ -20,6 +23,16 @@
       opacity: 1;
       animation: simpleFadeIn $animation-fast-time;
     }
+  }
+
+  /* Big Desktop */
+  @media (min-width: $big-desktop-min) {
+    max-width: $max-container-width;
+  }
+
+  @media (max-width: $sm-mobile-max) {
+    width: 100vw;
+    height: 100%;
   }
 
   // animations
