@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 
 import { workData } from "@/workData";
@@ -29,10 +29,9 @@ export default function Home() {
   const [itemState, setItemState] = useState(null);
 
   // update which portfolio page is showing
-  const mainRef = useRef();
   const updateSelectedItem = (newItem) => {
     setItemState(newItem);
-    mainRef.current.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // get data for each portfolio piece
@@ -48,33 +47,31 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`main`} ref={mainRef}>
-        <Header
-          updatePage={updatePage}
-          pageState={pageState}
-          updateSelectedItem={updateSelectedItem}
-        />
-        <div className="contentContainer initialLoad">
-          {showAbout && (
-            <About
-              pageState={pageState}
-              updateShowAbout={updateShowAbout}
-              updateShowWork={updateShowWork}
-            />
-          )}
+      <Header
+        updatePage={updatePage}
+        pageState={pageState}
+        updateSelectedItem={updateSelectedItem}
+      />
+      <div className="contentContainer initialLoad">
+        {showAbout && (
+          <About
+            pageState={pageState}
+            updateShowAbout={updateShowAbout}
+            updateShowWork={updateShowWork}
+          />
+        )}
 
-          {showWork && (
-            <Work
-              pageState={pageState}
-              updateShowWork={updateShowWork}
-              updateShowAbout={updateShowAbout}
-              updateSelectedItem={updateSelectedItem}
-              getItemData={getItemData}
-              itemState={itemState}
-            />
-          )}
-        </div>
-      </main>
+        {showWork && (
+          <Work
+            pageState={pageState}
+            updateShowWork={updateShowWork}
+            updateShowAbout={updateShowAbout}
+            updateSelectedItem={updateSelectedItem}
+            getItemData={getItemData}
+            itemState={itemState}
+          />
+        )}
+      </div>
     </>
   );
 }
