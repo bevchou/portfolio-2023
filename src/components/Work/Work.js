@@ -19,7 +19,9 @@ const Work = ({
 
   return (
     <div
-      className={`work ${pageState === "work" ? "visible" : "hidden"}`}
+      className={`work ${pageState === "work" ? "visible" : "hidden"} ${
+        showView.project ? "fixedHeight" : ""
+      }`}
       onAnimationEnd={() => {
         if (pageState !== "work") {
           // work fade out
@@ -83,7 +85,6 @@ const Work = ({
           <WorkView getItemData={getItemData} />
         </div>
       )}
-      <div className="nothing"></div>
     </div>
   );
 };

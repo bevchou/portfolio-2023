@@ -1,4 +1,46 @@
 export const workData = {
+  dataviz:{
+    name: "Data Viz Studio",
+    icon: "/projects/selfie/icon.jpg",
+    tags: ["interactive web", "d3.js"],
+    year: 2020,
+    images: [
+      {
+        url: "",
+        caption: "",
+    
+      },
+    ],
+    text: (
+      <span>
+        View project{" "}
+        <a target="_blank" href="https://prototypes.intuit.com/datavizstudio/">
+          here
+        </a>
+        !<br></br> <br></br>
+        Historically, artists have used self-portraits as a way to express
+        different facets of their identities. Now selfies and filters are often
+        used to create illusions or sell things to us. I invite you to create a
+        selfie portrait with your webcam by answering simple questions about
+        yourself. Instead of beautifying or morphing your face, you will add to
+        your image through self reflection.
+        <br></br>
+        <br></br> Made using{" "}
+        <a target="_blank" href="https://p5js.org">
+          p5.js
+        </a>
+        ,{" "}
+        <a target="_blank" href="https://github.com/auduno/clmtrackr/">
+          clmtrackr
+        </a>
+        , and the{" "}
+        <a target="_blank" href="https://www.flickr.com/services/api/">
+          flickr api
+        </a>
+        .
+      </span>
+    ),
+  },
   fwrd: {
     name: "Race to Hunts Point",
     icon: "/projects/fwrd/icon.jpg",
@@ -59,7 +101,7 @@ export const workData = {
         <br></br>
         <u>Co-designers:</u> <a target="_blank" href="https://www.behance.net/alamaroliv8598">Angel Lamar</a> and{" "}
         <a target="_blank" href="https://www.lilianyihsuanlin.com/">
-          Yi-Hsuan Lin
+          Lilian Yi-Hsuan Lin
         </a>
         <br></br>
         <br></br>

@@ -1,11 +1,11 @@
 @import "./animations.scss";
 .work {
   width: calc(100vw - 80px);
-  height: calc(100vh - 69px - 64px);
-  overflow: hidden;
-  .nothing {
-    height: 60px;
+  height: 100%;
+  &.fixedHeight {
+    height: calc(100vh - 69px - 64px);
   }
+  overflow: hidden;
   .projectView {
     display: flex;
     flex-direction: column;
@@ -30,7 +30,7 @@
 
   @media (max-width: $sm-mobile-max) {
     width: 100vw;
-    height: 100%;
+    // height: 100%;
   }
 
   // animations
