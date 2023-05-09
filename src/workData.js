@@ -426,6 +426,58 @@ export const workData = {
       </span>
     ),
   },
+  light: {
+    name: "Tilting Push Light",
+    icon: "/projects/light/icon.jpg",
+    tags: ["product design, fabrication"],
+    year: 2015,
+    images: [
+      {
+        url: "/projects/light/final1.jpg",
+        caption: "",
+      },
+      {
+        url: "/projects/light/final4.jpg",
+        caption: "",
+      },
+
+      {
+        url: "/projects/light/process1.jpeg",
+        caption: "some of the sketches",
+      },
+      {
+        url: "/projects/light/process2.jpeg",
+        caption: "more sketches",
+      },
+      {
+        url: "/projects/light/process3.jpg",
+        caption: "foam models",
+      },
+      {
+        url: "/projects/light/process4.jpg",
+        caption: "MDF buck and vacuum formed polystyrene plastic",
+      },
+      {
+        url: "/projects/light/process5.jpg",
+        caption: "two part silicon mold",
+      },
+    ],
+    text: (
+      <span>
+        I took apart a push light intended for wall mounting (silver) and then
+        created a new mating part to the front face of the original light. The
+        new design allows the light to sit on a surface at varying angles.
+        <br></br> <br></br>This was my process:
+        <ul>
+        <li><u>Ideation:</u> Sketch and create foam models.</li>
+        <li><u>Master Part:</u> Hand build MDF buck and vacuum form polystyrene plastic. Add supports and bosses to accommodate internal electronics.</li>
+        <li><u>Two-Part Silicon Mold:</u> First cast the exterior of the master part (blue), then the interior (clear).</li>
+        <li><u>Reproductions:</u> Inject urethane into silicon mold by hand.</li>
+        <li><u>Finish:</u> Sand, paint, and assemble new part to original parts.</li>
+        </ul>
+      </span>
+    ),
+  },
   soap: {
     name: "Olay Soap Dish",
     icon: "/projects/soap/icon.jpg",
@@ -569,7 +621,6 @@ export const workData = {
       </span>
     ),
   },
-
   dch: {
     name: "DCH Spark",
     icon: "/projects/dch/icon.jpg",
