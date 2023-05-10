@@ -218,7 +218,7 @@ export const workData = {
         internet experience.
         <br></br>
         <br></br>I also showed Slow Net at{" "}
-        <a target="_blank" href="https://www.instagram.com/p/B32VGbBlE2r/">
+        <a target="_blank" href="https://radicalnetworks.org/archives/2019/">
           Radical Networks
         </a>{" "}
         in 2019.
