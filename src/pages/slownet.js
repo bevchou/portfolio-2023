@@ -2,13 +2,13 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 useRouter;
 
-const ITP = () => {
+const Slownet = () => {
   const router = useRouter();
 
-  // redirect to page
+    // redirect to page
   useEffect(() => {
     setTimeout(() => {
-      router.push("https://itp.beverlychou.com/");
+      router.push("https://slownet.work/");
     }, 1000);
   }, []);
 
@@ -19,4 +19,4 @@ const ITP = () => {
   );
 };
 
-export default ITP;
+export default Slownet;
