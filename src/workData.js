@@ -394,17 +394,23 @@ export const workData = {
       <span>
         View project{" "}
         <a
-          target="_blank"
-          href="https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html"
+          style={{ textDecoration: "underline", cursor: "pointer" }}
+          onClick={() => {
+            window.open(
+              "https://itp.beverlychou.com/hacking-the-browser/w2-responsive-site/cat.html",
+              "liquid cats",
+              "width=500, height=475, left=24, top=24, scrollbars=no, resizable=yes,toolbar=no, menubar=no,directories=no, status=no"
+            );
+            return false;
+          }}
         >
           here
         </a>
         !<br></br> <br></br>
         There is a rule of physics that says liquids are able to take the shape
         of any container. Cats also follow this rule, and therefore are liquid.
-        I’m proving that it’s true, even in the browser. Q.E.D. You may need to
-        disable your popup blocker to view the demo. Works best on a desktop or
-        laptop.
+        I’m proving that it’s true, even in the browser. You may need to disable
+        your popup blocker to view the demo. Works best on a desktop or laptop.
       </span>
     ),
   },
