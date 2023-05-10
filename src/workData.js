@@ -501,7 +501,7 @@ export const workData = {
     text: (
       <span>
         View project{" "}
-        <a target="_blank" href="https://beverlychou.com/selfieportrait/">
+        <a target="_blank" href="/selfieportrait/index.html/">
           here
         </a>
         !<br></br> <br></br>
