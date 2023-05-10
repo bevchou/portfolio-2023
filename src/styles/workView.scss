@@ -23,8 +23,20 @@
       overflow-x: hidden;
       ul {
         padding-left: 20px;
-        margin-top: 8px;
+        margin-top: 12px;
+        li:not(:last-child) {
+          padding-bottom: 12px;
+        }
       }
+      ol {
+        margin-top: 12px;
+        padding-left: 30px;
+        li:not(:last-child) {
+          padding-left: 12px;
+          padding-bottom: 12px;
+        }
+      }
+
       .mobileOnly {
         display: none;
       }

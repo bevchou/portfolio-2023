@@ -1,43 +1,78 @@
 export const workData = {
-  dataviz:{
-    name: "Data Viz Studio",
-    icon: "/projects/selfie/icon.jpg",
+  dataviz: {
+    name: "DataViz Studio",
+    icon: "/projects/dataviz/icon.png",
     tags: ["interactive web", "d3.js"],
     year: 2020,
     images: [
       {
-        url: "",
-        caption: "",
-    
+        url: "/projects/dataviz/1.png",
+        caption: "chart gallery with filters in left panel",
+      },
+      {
+        url: "/projects/dataviz/2.png",
+        caption: "more info on each chart",
+      },
+      {
+        url: "/projects/dataviz/3.png",
+        caption: "bar chart editor",
+      },
+      {
+        url: "/projects/dataviz/4.png",
+        caption: "line chart editor",
+      },
+      {
+        url: "/projects/dataviz/5.png",
+        caption: "single bar editor",
+      },
+      {
+        url: "/projects/dataviz/6.png",
+        caption: "donut chart editor in dark mode theme",
+      },
+      {
+        url: "/projects/dataviz/7.png",
+        caption: "gallery in dark mode theme",
       },
     ],
     text: (
       <span>
-        View project{" "}
+        View it{" "}
         <a target="_blank" href="https://prototypes.intuit.com/datavizstudio/">
           here
         </a>
         !<br></br> <br></br>
-        Historically, artists have used self-portraits as a way to express
-        different facets of their identities. Now selfies and filters are often
-        used to create illusions or sell things to us. I invite you to create a
-        selfie portrait with your webcam by answering simple questions about
-        yourself. Instead of beautifying or morphing your face, you will add to
-        your image through self reflection.
+        DataViz Studio is a tool for designers to better understand how to use
+        charts within their designs and a chart generator where designers can
+        customize and export charts as an SVG or PNG using real data.
         <br></br>
-        <br></br> Made using{" "}
-        <a target="_blank" href="https://p5js.org">
-          p5.js
-        </a>
-        ,{" "}
-        <a target="_blank" href="https://github.com/auduno/clmtrackr/">
-          clmtrackr
-        </a>
-        , and the{" "}
-        <a target="_blank" href="https://www.flickr.com/services/api/">
-          flickr api
-        </a>
-        .
+        <br></br> QuickBooks is a product that benefits a lot from data
+        visualizations and I wanted to help our designers feel confident when
+        adding charts into their designs. Oftentimes designers would throw in an
+        extra chart to fill an empty space, but that can result in confusion for
+        end users. Another problem I encountered was that designers would make
+        charts from scratch that look amazing in a wireframe, but once a
+        developer built it and added data, it didn’t look as good or wasn’t
+        great at conveying meaningful information.
+        <br></br>
+        <br></br>
+        To combat these struggles, DataViz Studio has two parts:
+        <ol>
+          <li>
+            DataViz Studio’s gallery has filters on the left panel to help
+            designers narrow down which charts work best for their intended
+            application. Each item in the gallery includes how to use each chart
+            and best practices.
+          </li>
+          <li>
+            The chart editor allows designers to paste data from a spreadsheet
+            (perhaps provided by a dev or data analyst) into the editor to
+            create their own charts. They can then customize size, colors,
+            labels, titles, and more before exporting to a PNG or an SVG that is
+            easy to edit in Figma, Illustrator, or another editor.
+          </li>
+        </ol>
+        <br></br>I designed and built DataViz Studio using React, d3.js, and
+        react-datasheet while working as a design technologist at Intuit.
       </span>
     ),
   },
@@ -72,7 +107,7 @@ export const workData = {
       },
       {
         url: "/projects/fwrd/4.png",
-        caption: "playtesting a prototype"
+        caption: "playtesting a prototype",
       },
       {
         url: "/projects/fwrd/5.png",
@@ -93,13 +128,29 @@ export const workData = {
         of a global system.
         <br></br>
         <br></br>
-        The game emulates the process of managing growing produce and then moving the food to NYC. Pathways on the board are based on actual shipping routes. Resource management is key in the game. Players have to think about time (seasonality + perishability of foods, shipping times), resources (money, trading with players), technology (pay to increase efficiency at farming and/or shipping phases), and supply + demand at the final destination. 
+        The game emulates the process of managing growing produce and then
+        moving the food to NYC. Pathways on the board are based on actual
+        shipping routes. Resource management is key in the game. Players have to
+        think about time (seasonality + perishability of foods, shipping times),
+        resources (money, trading with players), technology (pay to increase
+        efficiency at farming and/or shipping phases), and supply + demand at
+        the final destination.
         <br></br>
         <br></br>
-        We quickly iterated through several different versions of the game, making sure to playtest with high schoolers and get feedback from game designers along the way. Throughout we explored how to make the visual design reflect the textures and topographies of farms and spaces that food moves through on its way to us. For the board we experimented with different materials and used rapid prototyping tools like laser cutters, CNC (Shapeoko + Othermill), and 3D printers.
+        We quickly iterated through several different versions of the game,
+        making sure to playtest with high schoolers and get feedback from game
+        designers along the way. Throughout we explored how to make the visual
+        design reflect the textures and topographies of farms and spaces that
+        food moves through on its way to us. For the board we experimented with
+        different materials and used rapid prototyping tools like laser cutters,
+        CNC (Shapeoko + Othermill), and 3D printers.
         <br></br>
         <br></br>
-        <u>Co-designers:</u> <a target="_blank" href="https://www.behance.net/alamaroliv8598">Angel Lamar</a> and{" "}
+        <u>Co-designers:</u>{" "}
+        <a target="_blank" href="https://www.behance.net/alamaroliv8598">
+          Angel Lamar
+        </a>{" "}
+        and{" "}
         <a target="_blank" href="https://www.lilianyihsuanlin.com/">
           Lilian Yi-Hsuan Lin
         </a>
@@ -126,7 +177,7 @@ export const workData = {
   },
   slownet: {
     name: "Slow Net",
-    tags: ["speculative networks", "concept art lol"],
+    tags: ["networks", "internet art"],
     year: 2019,
     icon: "/projects/slownet/icon.jpg",
     images: [
