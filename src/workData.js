@@ -36,7 +36,7 @@ export const workData = {
     ],
     text: (
       <span>
-        View it{" "}
+        Try it out{" "}
         <a target="_blank" href="https://prototypes.intuit.com/datavizstudio/">
           here
         </a>

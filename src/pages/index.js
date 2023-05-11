@@ -45,6 +45,7 @@ export default function Home() {
         <title>BEVERLY CHOU</title>
         <meta name="description" content="personal website of beverly chou" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script async src="https://analytics.umami.is/script.js" data-website-id="1442e61e-21e6-4237-a94d-8dbea440c931"></script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header
