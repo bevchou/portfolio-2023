@@ -1,0 +1,40 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+img .gif {
+  position: absolute;
+  width: 100%;
+  top: 200px;
+}
+
+img {
+  max-height: 400px;
+  padding: 20px;
+}
+
+ #slider {
+  position: absolute;
+  width: 100%;
+  top: 350px;
+  text-align: center;
+  padding: 20px;
+}
+
+#button {
+  position: absolute;
+  width: 100%;
+  top: 400px;
+  padding: 20px;
+}
+
+.keep {
+  height: 100px;
+  top: -50px;
+  position: absolute;
+}
