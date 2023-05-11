@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
 
-import { workData } from "@/workData";
+import { workData } from "../workData";
 
-import Header from "@/components/Header";
-import About from "@/components/About/About";
-import Work from "@/components/Work/Work";
+import Header from "../components/Header";
+import About from "../components/About/About";
+import Work from "../components/Work/Work";
 
 export default function Home() {
   // update work/about page selection

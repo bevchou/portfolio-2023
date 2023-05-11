@@ -1,6 +1,6 @@
 import React from "react";
 
-import CloseIcon from "@/assets/closeIcon";
+import CloseIcon from "../../assets/CloseIcon";
 
 const WorkItem = ({ name, tags, year, icon, updateSelectedItem, selected }) => {
   const formatTags = (tags) => {

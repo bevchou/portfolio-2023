@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import WorkItem from "./WorkItem";
 import WorkView from "./WorkView";
-import { workData } from "@/workData";
+import { workData } from "../../workData";
 
 const Work = ({
   pageState,

@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import Arrow from "@/assets/Arrow";
+import Arrow from "../../assets/Arrow";
 
 const ImageScroller = ({ imgSrcs }) => {
   const scrollerRef = useRef();
