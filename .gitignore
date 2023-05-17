@@ -3,6 +3,10 @@
 # TODO~bev - remove this later to get images working
 # /public/projects
 
+# keys
+gh-pages
+gh-pages.pub
+
 # dependencies
 /node_modules
 /.pnp
