@@ -25,6 +25,7 @@ body {
       width: calc(50% + 148px);
       .initialSelect {
         font-weight: 800;
+        cursor: pointer;
       }
       .selected {
         animation: select $animation-time;
