@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { contactInfo, aboutText, photo } from "../../aboutData";
 
 const ContactItem = ({ type, value, linkSrc }) => {
-  return (
+  return ( 
     <>
       <div className="contactItem">
         <div className="type">{type}</div>
