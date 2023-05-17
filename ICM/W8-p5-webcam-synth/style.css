@@ -1,0 +1,51 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+#webcam {
+  position: absolute;
+  left: 50%;
+  margin-left: : -30px;
+  top: 10px;
+}
+
+#canvas {
+  top: 60px;
+  position: relative;
+  margin: auto;
+}
+
+#thresholdSlider {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 500px;
+}
+
+#thresholdText {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  top: 470px;
+}
+
+#musicBarSlider {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  top: 560px;
+}
+
+#musicBarText {
+  position: absolute;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  top: 530px;
+}

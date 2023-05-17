@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55123937-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-55123937-1');
+  </script>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <!-- clm face tracking -->
+  <script src="clmtrackr.js"></script>
+  <script src="model_pca_20_svm.js"></script>
+  <!-- p5.js libraries -->
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <!-- <script src="p5.sound.min.js"></script> -->
+  <!-- my files -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="inputFunctions.js"></script>
+  <script src="imgcloud.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+
+  <!-- Trigger/Open The Modal -->
+  <button id="myBtn">About This Project</button>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p style="font-size: 16px;">
+        Historically, artists have used self-portraits as a way to express different facets of their identities. Now selfies and filters are often used to create illusions or sell things to us. I invite you to create a selfie portrait with your webcam by answering
+        simple questions about yourself. Instead of beautifying or morphing your face, you will add to your image through self reflection.
+        <br><br> Made by <a href="https://beverlychou.com">Beverly Chou</a> using <a href="https://p5js.org">p5.js</a>, <a href="https://github.com/auduno/clmtrackr/">clmtrackr</a>, and the <a href="https://www.flickr.com/services/api/">flickr api</a> in Fall 2017.
+        <br><br> Please enable your webcam. This website runs best in Chrome.
+      </p>
+    </div>
+  </div>
+  <script>
+    // Get the modal
+    var modal = document.getElementById('myModal');
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    // When the user clicks the button, open the modal
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+
+  <!-- nav back to main  -->
+  <a href="https://beverlychou.com" id="backnav">&#8592; Back to Portfolio</a>
+
+
+  <h1>Answer questions. Make a portrait.</h1>
+
+  <textentry>
+    Please submit one word per input field. Press enter to submit.
+    <ul>
+      <li>Who is this?</li>
+      <li>What do you like?</li>
+      <li>Describe yourself.</li>
+    </ul>
+  </textentry>
+
+  <bybev>
+    webcam self portraits by you & <a href="https://beverlychou.com">beverly chou</a>
+  </bybev>
+
+  <credits>
+    thanks to mimi yin & our icm class!
+  </credits>
+
+
+
+</body>
+
+
+</html>

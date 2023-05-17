@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55123937-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-55123937-1');
+  </script>
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <!-- clm face tracking -->
+  <script src="clmtrackr.js"></script>
+  <script src="model_pca_20_svm.js"></script>
+  <!-- p5.js libraries -->
+  <script src="p5.min.js"></script>
+  <script src="p5.dom.min.js"></script>
+  <!-- <script src="p5.sound.min.js"></script> -->
+  <!-- my files -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="inputFunctions.js"></script>
+  <script src="imgcloud.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <h1>Answer questions. Make a portrait.</h1>
+
+  <textentry>
+    Please submit one word per input field. Press enter to submit.
+    <ul>
+      <li>Who is this?</li>
+      <li>What do you like?</li>
+      <li>Describe yourself.</li>
+    </ul>
+  </textentry>
+
+  <bybev>
+    webcam self portraits by you & <a href="https://beverlychou.com">beverly chou</a>
+  </bybev>
+
+  <credits>
+    runs best in chrome
+    <br> made using <a href="https://p5js.org">p5.js</a>, <a href="https://github.com/auduno/clmtrackr/">clmtrackr</a>, and <a href="https://www.flickr.com/services/api/">flickr api</a>
+    <br> thanks to mimi yin & our icm class!
+  </credits>
+
+
+
+</body>
+
+</html>
