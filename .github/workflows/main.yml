@@ -20,7 +20,7 @@ jobs:
       - name: Installing dependencies
         run: yarn install
       - name: Build Next.js Site
-        run: yarn build
+        run: yarn build && yarn export && touch ./out/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.4.1
