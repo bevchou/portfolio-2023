@@ -16,7 +16,7 @@ export const contactInfo = [
   },
   {
     type: "last update",
-    value: "May 11, 2023",
+    value: "May 17, 2023",
   },
 ];
 
