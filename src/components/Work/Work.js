@@ -82,7 +82,7 @@ const Work = ({
             selected={true}
             updateSelectedItem={updateSelectedItem}
           />
-          <WorkView getItemData={getItemData}  />
+          <WorkView getItemData={getItemData} updateSelectedItem={updateSelectedItem}  />
         </div>
       )}
     </div>
