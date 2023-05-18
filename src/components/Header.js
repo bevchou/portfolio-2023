@@ -4,16 +4,19 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
 
-  // useEffect(() => {
-  //   if (pageState === "work") {
-  //     workRef.current.classList.add("initialSelect");
-  //   } else if (pageState === "about") {
-  //     aboutRef.current.classList.add("initialSelect");
-  //   }
-  // }, []);
+  useEffect(() => {
+    if (pageState === "work") {
+      workRef.current.classList.add("initialSelect");
+      aboutRef.current.classList.add("initialDeselected");
+    } else if (pageState === "about") {
+      aboutRef.current.classList.add("initialSelect");
+      workRef.current.classList.add("initialDeselected");
+    }
+  }, []);
 
   const onHeaderClick = (pageName) => {
     workRef.current.classList.remove("initialSelect");
+    aboutRef.current.classList.remove("initialSelect");
 
     // update the URL
     history.pushState({ pageName: pageName }, "", `/${pageName}`);
@@ -48,7 +51,7 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
       <div className="name">BEVERLY CHOU</div>
 
       <div className="pages">
-        <div ref={workRef} className={`initialSelect`} onClick={() => onHeaderClick("work")}>
+        <div ref={workRef} onClick={() => onHeaderClick("work")}>
           WORK
         </div>
         <div ref={aboutRef} onClick={() => onHeaderClick("about")}>

@@ -25,6 +25,11 @@ body {
       width: calc(50% + 148px);
       .initialSelect {
         font-weight: 800;
+        order: 2;
+        cursor: pointer;
+      }
+      .initialDeselected {
+        order: 3;
         cursor: pointer;
       }
       .selected {
@@ -47,7 +52,6 @@ body {
       animation: simpleFadeIn $animation-time;
     }
   }
-
 
   /* Tablet and Smaller Desktop */
   @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
