@@ -13,10 +13,6 @@ const nextConfig = {
         source: "/work",
         destination: "/",
       },
-      {
-        source: "/work/:item",
-        destination: "/",
-      },
     ];
   },
   // assetPrefix: isProd ? "/portfolio-2023/" : "",
@@ -25,18 +21,6 @@ const nextConfig = {
     path: "",
   },
   assetPrefix: "./",
-  // async rewrites() {
-  //   return [
-  //     {
-  //       source: "/about",
-  //       destination: "/",
-  //     },
-  //     {
-  //       source: "/work",
-  //       destination: "/",
-  //     },
-  //   ];
-  // },
 };
 
 module.exports = nextConfig;

@@ -17,8 +17,8 @@ export default function Home() {
 
   // when to show/hide visibility each page
   const [showPage, setShowPage] = useState({
-    about: false,
-    work: true,
+    about: null,
+    work: null,
   });
   const updateShowPage = (newShowPageState) => {
     setShowPage({
@@ -27,11 +27,39 @@ export default function Home() {
     });
   };
 
+  // set which portfolio piece to show
+  const [itemState, setItemState] = useState(null);
+  // update which portfolio page is showing
+  const updateSelectedItem = (newItem) => {
+    // get key of item
+    const itemKey = Object.keys(workData).find(
+      (key) => workData[key].name === newItem
+    );
+    // update the URL
+    history.pushState(
+      { pageName: pageState, item: itemKey },
+      "",
+      `/${pageState}${newItem !== null ? `?project=${itemKey}` : ""}`
+    );
+
+    setItemState(newItem);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   // set which page to show based on URL
   useEffect(() => {
     const url = new URL(window.location.href);
     const path = url.pathname.split("/").slice(1);
+
+    const projectQuery = url.search.split("?project=").slice(1);
+
     const page = path[0];
+    const project = projectQuery[0];
+
+    if (Object.keys(workData).includes(project)) {
+      setItemState(workData[project].name);
+    }
+
     if (page.length <= 0 || page === "work") {
       setPageState("work");
       updateShowPage({
@@ -46,15 +74,6 @@ export default function Home() {
       });
     }
   }, []);
-
-  // set which portfolio piece to show
-  const [itemState, setItemState] = useState(null);
-
-  // update which portfolio page is showing
-  const updateSelectedItem = (newItem) => {
-    setItemState(newItem);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
 
   // get data for each portfolio piece
   const getItemData = () => {
