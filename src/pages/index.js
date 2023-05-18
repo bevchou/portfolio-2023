@@ -30,9 +30,15 @@ export default function Home() {
     const url = new URL(window.location.href);
     const path = url.pathname.split("/").slice(1);
     const page = path[0];
-    setPageState(page ?? "work");
-    setShowAbout(page === "about");
-    setShowWork(page === "work");
+    if (page.length <= 0 || page === "work") {
+      setPageState("work");
+      setShowAbout(false);
+      setShowWork(true);
+    } else if (page === "about") {
+      setPageState("about");
+      setShowAbout(true);
+      setShowWork(false);
+    }
   }, []);
 
   // set which portfolio piece to show
@@ -62,31 +68,35 @@ export default function Home() {
         src="https://analytics.umami.is/script.js"
         data-website-id="1442e61e-21e6-4237-a94d-8dbea440c931"
       ></Script>
-      <Header
-        updatePage={updatePage}
-        pageState={pageState}
-        updateSelectedItem={updateSelectedItem}
-      />
-      <div className="contentContainer initialLoad">
-        {showAbout && (
-          <About
+      {pageState !== null && (
+        <>
+          <Header
+            updatePage={updatePage}
             pageState={pageState}
-            updateShowAbout={updateShowAbout}
-            updateShowWork={updateShowWork}
-          />
-        )}
-
-        {showWork && (
-          <Work
-            pageState={pageState}
-            updateShowWork={updateShowWork}
-            updateShowAbout={updateShowAbout}
             updateSelectedItem={updateSelectedItem}
-            getItemData={getItemData}
-            itemState={itemState}
           />
-        )}
-      </div>
+          <div className="contentContainer initialLoad">
+            {showAbout && (
+              <About
+                pageState={pageState}
+                updateShowAbout={updateShowAbout}
+                updateShowWork={updateShowWork}
+              />
+            )}
+
+            {showWork && (
+              <Work
+                pageState={pageState}
+                updateShowWork={updateShowWork}
+                updateShowAbout={updateShowAbout}
+                updateSelectedItem={updateSelectedItem}
+                getItemData={getItemData}
+                itemState={itemState}
+              />
+            )}
+          </div>
+        </>
+      )}
     </>
   );
 }
