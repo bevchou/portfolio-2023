@@ -501,10 +501,10 @@ export const workData = {
     text: (
       <span>
         View project{" "}
-        <a target="_blank" href="/selfieportrait/index.html/">
+        <a target="_blank" href="/selfieportrait/index.html">
           here
         </a>
-        !<br></br> <br></br>
+        ! Works best in Chrome.<br></br> <br></br>
         Historically, artists have used self-portraits as a way to express
         different facets of their identities. Now selfies and filters are often
         used to create illusions or sell things to us. I invite you to create a
