@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
+import Script from "next/script";
 
-import { workData } from "@/workData";
+import { workData } from "../workData";
 
-import Header from "@/components/Header";
-import About from "@/components/About/About";
-import Work from "@/components/Work/Work";
+import Header from "../components/Header";
+import About from "../components/About/About";
+import Work from "../components/Work/Work";
 
 export default function Home() {
   // update work/about page selection
@@ -40,6 +41,7 @@ export default function Home() {
   // update which portfolio page is showing
   const updateSelectedItem = (newItem) => {
     setItemState(newItem);
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   // get data for each portfolio piece
@@ -55,33 +57,36 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`main`}>
-        <Header
-          updatePage={updatePage}
-          pageState={pageState}
-          updateSelectedItem={updateSelectedItem}
-        />
-        <div className="contentContainer initialLoad">
-          {showAbout && (
-            <About
-              pageState={pageState}
-              updateShowAbout={updateShowAbout}
-              updateShowWork={updateShowWork}
-            />
-          )}
+      <Script
+        async
+        src="https://analytics.umami.is/script.js"
+        data-website-id="1442e61e-21e6-4237-a94d-8dbea440c931"
+      ></Script>
+      <Header
+        updatePage={updatePage}
+        pageState={pageState}
+        updateSelectedItem={updateSelectedItem}
+      />
+      <div className="contentContainer initialLoad">
+        {showAbout && (
+          <About
+            pageState={pageState}
+            updateShowAbout={updateShowAbout}
+            updateShowWork={updateShowWork}
+          />
+        )}
 
-          {showWork && (
-            <Work
-              pageState={pageState}
-              updateShowWork={updateShowWork}
-              updateShowAbout={updateShowAbout}
-              updateSelectedItem={updateSelectedItem}
-              getItemData={getItemData}
-              itemState={itemState}
-            />
-          )}
-        </div>
-      </main>
+        {showWork && (
+          <Work
+            pageState={pageState}
+            updateShowWork={updateShowWork}
+            updateShowAbout={updateShowAbout}
+            updateSelectedItem={updateSelectedItem}
+            getItemData={getItemData}
+            itemState={itemState}
+          />
+        )}
+      </div>
     </>
   );
 }

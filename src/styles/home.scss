@@ -1,8 +1,7 @@
 @import "./animations.scss";
 
-.main {
+body {
   width: 100vw;
-  height: 100vh;
   padding: 24px 40px 40px 40px;
   display: flex;
   flex-direction: column;
@@ -26,6 +25,7 @@
       width: calc(50% + 148px);
       .initialSelect {
         font-weight: 800;
+        cursor: pointer;
       }
       .selected {
         animation: select $animation-time;
@@ -47,10 +47,7 @@
       animation: simpleFadeIn $animation-time;
     }
   }
-  /* Big Desktop */
-  @media (min-width: $big-desktop-min) {
-    max-width: 1220px;
-  }
+
 
   /* Tablet and Smaller Desktop */
   @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {

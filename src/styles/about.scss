@@ -1,7 +1,6 @@
 @import "./animations.scss";
 .about {
   width: 100%;
-  border: $border-style;
   display: flex;
   flex-direction: column;
   // // animations
@@ -15,11 +14,13 @@
   }
 
   .about-main {
+    border: $border-style;
     display: flex;
     font-size: $big-body-font-size;
     img {
       border-right: $border-style;
       object-fit: cover;
+      max-width: 250px;
     }
     .about-text {
       flex: 1;
@@ -28,7 +29,8 @@
     }
   }
   .contact {
-    border-top: $border-style;
+    border: $border-style;
+    border-top: none;
     padding: $big-body-padding;
     display: grid;
     grid-template-columns: minmax(120px, auto) 1fr minmax(120px, auto) 1fr;
@@ -52,6 +54,16 @@
       }
     }
   }
+
+  .siteInfo {
+    height: 40px;
+  }
+
+  /* Big Desktop */
+  @media (min-width: $big-desktop-min) {
+    max-width: $max-container-width;
+  }
+
   /* Tablet and Smaller Desktop */
   @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
     .contact {
@@ -62,14 +74,19 @@
   /* Phones */
   @media (max-width: $sm-mobile-max) {
     padding-bottom: $extra-mobile-bottom-padding;
-    border: none;
     .about-main {
       flex-direction: column;
       font-size: $big-body-mobile-font-size;
+      border-left: none;
+      border-right: none;
       img {
-        max-height: 320px;
+        max-width: none;
+        max-height: 200px;
         border-right: none;
-        border-top: $border-style;
+        padding: 0 25%;
+        @media (max-width: 500px) {
+          padding: 0 12%;
+        }
       }
       .about-text {
         border-top: $border-style;
@@ -77,6 +94,8 @@
       }
     }
     .contact {
+      border-left: none;
+      border-right: none;
       grid-template-columns: minmax(100px, auto) 1fr;
       border-bottom: $border-style;
       .contactItem:last-child {

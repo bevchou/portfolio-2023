@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import WorkItem from "./WorkItem";
 import WorkView from "./WorkView";
-import { workData } from "@/workData";
+import { workData } from "../../workData";
 
 const Work = ({
   pageState,
@@ -19,7 +19,9 @@ const Work = ({
 
   return (
     <div
-      className={`work ${pageState === "work" ? "visible" : "hidden"}`}
+      className={`work ${pageState === "work" ? "visible" : "hidden"} ${
+        showView.project ? "fixedHeight" : ""
+      }`}
       onAnimationEnd={() => {
         if (pageState !== "work") {
           // work fade out
@@ -48,6 +50,7 @@ const Work = ({
             <WorkItem
               key={item.name}
               name={item.name}
+              icon={item.icon}
               tags={item.tags}
               year={item.year}
               selected={false}
@@ -73,12 +76,13 @@ const Work = ({
           <WorkItem
             key={getItemData()?.name}
             name={getItemData()?.name}
+            icon={getItemData()?.icon}
             tags={getItemData()?.tags}
             year={getItemData()?.year}
             selected={true}
             updateSelectedItem={updateSelectedItem}
           />
-          <WorkView getItemData={getItemData} />
+          <WorkView getItemData={getItemData}  />
         </div>
       )}
     </div>

@@ -2,7 +2,7 @@
 $background-color: #ffffff;
 $text-color-main: #000000;
 $border-style: 4px solid #000;
-$extra-mobile-bottom-padding: 200px;
+$extra-mobile-bottom-padding: 40px;
 
 $animation-time: 1.2s;
 $animation-half-time: 0.6s;
@@ -12,6 +12,9 @@ $animation-fast-time: 0.4s;
 $big-desktop-min: 1440px;
 $sm-desktop-max: 1024px;
 $sm-mobile-max: 768px;
+
+// MAX WIDTH OF MAIN CONTAINER
+$max-container-width: 1220px;
 
 // MAIN TYPOGRAPHY STYLES
 $big-body-font-size: 26px;
