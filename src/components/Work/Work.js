@@ -6,8 +6,7 @@ import { workData } from "../../workData";
 
 const Work = ({
   pageState,
-  updateShowWork,
-  updateShowAbout,
+  updateShowPage,
   updateSelectedItem,
   getItemData,
   itemState,
@@ -25,8 +24,10 @@ const Work = ({
       onAnimationEnd={() => {
         if (pageState !== "work") {
           // work fade out
-          updateShowWork(false);
-          updateShowAbout(true);
+          updateShowPage({
+            work: false,
+            about: true,
+          });
         }
       }}
     >
@@ -82,7 +83,7 @@ const Work = ({
             selected={true}
             updateSelectedItem={updateSelectedItem}
           />
-          <WorkView getItemData={getItemData}  />
+          <WorkView getItemData={getItemData} />
         </div>
       )}
     </div>

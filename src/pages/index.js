@@ -15,15 +15,15 @@ export default function Home() {
     setPageState(newPage);
   };
 
-  // when to show/hide about page
-  const [showAbout, setShowAbout] = useState(false);
-  const updateShowAbout = (bool) => {
-    setShowAbout(bool);
-  };
-  // when to show/hide work page
-  const [showWork, setShowWork] = useState(true);
-  const updateShowWork = (bool) => {
-    setShowWork(bool);
+  const [showPage, setShowPage] = useState({
+    about: false,
+    work: true,
+  });
+  const updateShowPage = (newShowPageState) => {
+    setShowPage({
+      ...showPage,
+      ...newShowPageState,
+    });
   };
 
   useEffect(() => {
@@ -32,12 +32,16 @@ export default function Home() {
     const page = path[0];
     if (page.length <= 0 || page === "work") {
       setPageState("work");
-      setShowAbout(false);
-      setShowWork(true);
+      updateShowPage({
+        about: false,
+        work: true,
+      });
     } else if (page === "about") {
       setPageState("about");
-      setShowAbout(true);
-      setShowWork(false);
+      updateShowPage({
+        about: true,
+        work: false,
+      });
     }
   }, []);
 
@@ -76,19 +80,14 @@ export default function Home() {
             updateSelectedItem={updateSelectedItem}
           />
           <div className="contentContainer initialLoad">
-            {showAbout && (
-              <About
-                pageState={pageState}
-                updateShowAbout={updateShowAbout}
-                updateShowWork={updateShowWork}
-              />
+            {showPage.about && (
+              <About pageState={pageState} updateShowPage={updateShowPage} />
             )}
 
-            {showWork && (
+            {showPage.work && (
               <Work
                 pageState={pageState}
-                updateShowWork={updateShowWork}
-                updateShowAbout={updateShowAbout}
+                updateShowPage={updateShowPage}
                 updateSelectedItem={updateSelectedItem}
                 getItemData={getItemData}
                 itemState={itemState}

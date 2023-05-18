@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { contactInfo, aboutText, photo } from "../../aboutData";
 
 const ContactItem = ({ type, value, linkSrc }) => {
-  return ( 
+  return (
     <>
       <div className="contactItem">
         <div className="type">{type}</div>
@@ -20,15 +20,17 @@ const ContactItem = ({ type, value, linkSrc }) => {
   );
 };
 
-const About = ({ pageState, updateShowAbout, updateShowWork }) => {
+const About = ({ pageState, updateShowPage }) => {
   return (
     <div
       className={`about ${pageState === "about" ? "visible" : "hidden"}`}
       onAnimationEnd={() => {
         if (pageState !== "about") {
           // about fade out
-          updateShowAbout(false);
-          updateShowWork(true);
+          updateShowPage({
+            about: false,
+            work: true,
+          });
         }
       }}
     >
