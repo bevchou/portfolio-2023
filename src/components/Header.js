@@ -15,8 +15,9 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
   }, []);
 
   const onHeaderClick = (pageName) => {
-    workRef.current.classList.remove("initialSelect");
-    aboutRef.current.classList.remove("initialSelect");
+    // remove all classes
+    workRef.current.removeAttribute("class");
+    aboutRef.current.removeAttribute("class");
 
     // update the URL
     history.pushState({ pageName: pageName }, "", `/${pageName}`);
