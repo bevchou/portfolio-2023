@@ -15,6 +15,7 @@ export default function Home() {
     setPageState(newPage);
   };
 
+  // when to show/hide visibility each page
   const [showPage, setShowPage] = useState({
     about: false,
     work: true,
@@ -26,6 +27,7 @@ export default function Home() {
     });
   };
 
+  // set which page to show based on URL
   useEffect(() => {
     const url = new URL(window.location.href);
     const path = url.pathname.split("/").slice(1);

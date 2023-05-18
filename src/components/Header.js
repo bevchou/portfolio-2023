@@ -4,6 +4,7 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
   const workRef = useRef(null);
   const aboutRef = useRef(null);
 
+  // initial classes
   useEffect(() => {
     if (pageState === "work") {
       workRef.current.classList.add("initialSelect");
@@ -30,9 +31,7 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
         updatePage("work");
       }
       // update classes for header animation
-      workRef.current.classList.remove("deselected");
       workRef.current.classList.add("selected");
-      aboutRef.current.classList.remove("selected");
       aboutRef.current.classList.add("deselected");
     } else if (pageName === "about") {
       // update page
@@ -40,9 +39,7 @@ const Header = ({ updatePage, updateSelectedItem, pageState }) => {
         updatePage("about");
       }
       // update classes for header sanimation
-      aboutRef.current.classList.remove("deselected");
       aboutRef.current.classList.add("selected");
-      workRef.current.classList.remove("selected");
       workRef.current.classList.add("deselected");
     }
   };
