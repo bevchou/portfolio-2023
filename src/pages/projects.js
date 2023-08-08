@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Head from "next/head";
 import { useEffect } from "react";
 useRouter;
 
@@ -13,9 +14,14 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="notFound">
-      <div>redirecting...</div>
-    </div>
+    <>
+      <Head>
+        <meta name="robots" content="noindex"></meta>
+      </Head>
+      <div className="notFound">
+        <div>redirecting...</div>
+      </div>
+    </>
   );
 };
 
