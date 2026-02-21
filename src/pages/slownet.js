@@ -10,7 +10,7 @@ const Slownet = () => {
     setTimeout(() => {
       router.push("https://slownet.work/");
     }, 1000);
-  }, []);
+  }, [router]);
 
   return (
     <div className="notFound">

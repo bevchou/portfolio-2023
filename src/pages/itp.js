@@ -10,7 +10,7 @@ const ITP = () => {
     setTimeout(() => {
       router.push("https://itp.beverlychou.com/");
     }, 1000);
-  }, []);
+  }, [router]);
 
   return (
     <div className="notFound">

@@ -36,11 +36,6 @@ export const workData = {
     ],
     text: (
       <span>
-        Try it out{" "}
-        <a target="_blank" href="https://prototypes.intuit.com/datavizstudio/">
-          here
-        </a>
-        !<br></br> <br></br>
         DataViz Studio is a tool for designers to better understand how to use
         charts within their designs and a chart generator where designers can
         customize and export charts as an SVG or PNG using real data.

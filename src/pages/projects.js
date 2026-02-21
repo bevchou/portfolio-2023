@@ -11,7 +11,7 @@ const Projects = () => {
     router.push(
       "https://www.figma.com/proto/X04mT1FYBWJKk4hBw48ma3/Bev---Focus-Portfolio-Share-2024?page-id=113%3A16&node-id=113-17&node-type=canvas&viewport=589%2C221%2C0.1&t=hOUJW6RlKuarVSfs-1&scaling=contain&content-scaling=fixed"
     );
-  }, []);
+  }, [router]);
 
   return (
     <>

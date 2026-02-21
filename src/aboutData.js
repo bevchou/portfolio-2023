@@ -16,11 +16,11 @@ export const contactInfo = [
   },
   {
     type: "last update",
-    value: "March 19, 2024",
+    value: "February 20, 2026",
   },
 ];
 
 export const aboutText =
-  <span>I'm a creative technologist and designer. Currently, I'm a design engineer at Meta. Previously, I was a design technologist at <a href="https://frog.co/" target="_blank">frog</a> and <a href="https://intuit.com/" target="_blank">Intuit</a>. Before that I designed custom speakers at <a href="http://www.leonspeakers.com/" target="_blank">Leon</a>. I also got an MPS at NYU's <a href="https://tisch.nyu.edu/itp" target="_blank">Interactive Telecommunications Program</a> and a BSE in mechanical engineering at the University of Michigan. <br></br><br></br>I am interested in tangible interfaces, ethical technology, overlooked infrastructures, Josef Albers's color theory, electronic device prototyping, and slow jams.</span>;
+  <span>I'm a creative technologist and designer. Currently, I'm a design technologist at <a href="https://rocket.com/" target="_blank">Rocket</a>. Previously, I've worked at Meta, <a href="https://frog.co/" target="_blank">frog</a>, <a href="https://intuit.com/" target="_blank">Intuit</a>, and <a href="http://www.leonspeakers.com/" target="_blank">Leon</a>. Before that I got an MPS at NYU's <a href="https://tisch.nyu.edu/itp" target="_blank">Interactive Telecommunications Program</a> and a BSE in mechanical engineering at the University of Michigan. <br></br><br></br>I am interested in tangible interfaces, ethical technology, overlooked infrastructures, Josef Albers's color theory, electronic device prototyping, and slow jams.</span>;
 
   export const photo = "/bev.png";
