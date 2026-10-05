@@ -248,16 +248,6 @@ export const workData = {
     ],
     text: (
       <span>
-        Play with the{" "}
-        <a target="_blank" href="https://visualmode.space/command/">
-          controller
-        </a>{" "}
-        and{" "}
-        <a target="_blank" href="https://visualmode.space/">
-          view it here
-        </a>
-        !<br></br>
-        <br></br>
         Originally designed to be a collective{" "}
         <a target="_blank" href="https://en.wikipedia.org/wiki/VJing">
           VJing
