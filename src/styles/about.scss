@@ -1,4 +1,6 @@
-@import "./animations.scss";
+@use "animations.scss";
+@use "variables";
+
 .about {
   width: 100%;
   display: flex;
@@ -7,48 +9,48 @@
   // // animations
   &.hidden {
     opacity: 0;
-    animation: simpleFadeOut $animation-half-time;
+    animation: simpleFadeOut variables.$animation-half-time;
   }
   &.visible {
     opacity: 1;
-    animation: simpleFadeIn $animation-half-time;
+    animation: simpleFadeIn variables.$animation-half-time;
   }
 
   .about-main {
-    border: $border-style;
+    border: variables.$border-style;
     display: flex;
-    font-size: $big-body-font-size;
+    font-size: variables.$big-body-font-size;
     img {
-      border-right: $border-style;
+      border-right: variables.$border-style;
       object-fit: cover;
       max-width: 250px;
     }
     .about-text {
       flex: 1;
-      padding: $big-body-padding;
+      padding: variables.$big-body-padding;
       margin: 0;
     }
   }
   .contact {
-    border: $border-style;
+    border: variables.$border-style;
     border-top: none;
-    padding: $big-body-padding;
+    padding: variables.$big-body-padding;
     display: grid;
     grid-template-columns: minmax(120px, auto) 1fr minmax(120px, auto) 1fr;
     gap: 26px;
     .contactItem {
-      font-size: $contact-label-font-size;
+      font-size: variables.$contact-label-font-size;
       display: flex;
       // justify-content: space-between;
       .type {
         text-transform: uppercase;
-        font-weight: $contact-label-font-weight;
+        font-weight: variables.$contact-label-font-weight;
       }
       .value {
         flex-grow: 1;
-        font-family: $contact-value-font-family;
-        font-size: $contact-value-font-size;
-        letter-spacing: $contact-value-letter-spacing;
+        font-family: variables.$contact-value-font-family;
+        font-size: variables.$contact-value-font-size;
+        letter-spacing: variables.$contact-value-letter-spacing;
         color: inherit;
         text-decoration: none;
         line-break: anywhere;
@@ -61,23 +63,23 @@
   }
 
   /* Big Desktop */
-  @media (min-width: $big-desktop-min) {
-    max-width: $max-container-width;
+  @media (min-width: variables.$big-desktop-min) {
+    max-width: variables.$max-container-width;
   }
 
   /* Tablet and Smaller Desktop */
-  @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
+  @media (min-width: variables.$sm-mobile-max) and (max-width: variables.$sm-desktop-max) {
     .contact {
       grid-template-columns: minmax(200px, auto) 1fr;
     }
   }
 
   /* Phones */
-  @media (max-width: $sm-mobile-max) {
-    padding-bottom: $extra-mobile-bottom-padding;
+  @media (max-width: variables.$sm-mobile-max) {
+    padding-bottom: variables.$extra-mobile-bottom-padding;
     .about-main {
       flex-direction: column;
-      font-size: $big-body-mobile-font-size;
+      font-size: variables.$big-body-mobile-font-size;
       border-left: none;
       border-right: none;
       img {
@@ -90,15 +92,15 @@
         }
       }
       .about-text {
-        border-top: $border-style;
-        padding: $big-body-mobile-padding;
+        border-top: variables.$border-style;
+        padding: variables.$big-body-mobile-padding;
       }
     }
     .contact {
       border-left: none;
       border-right: none;
       grid-template-columns: minmax(100px, auto) 1fr;
-      border-bottom: $border-style;
+      border-bottom: variables.$border-style;
       .contactItem:last-child {
         .value {
           padding-bottom: 0;
@@ -110,10 +112,10 @@
         gap: 0;
       }
       .type {
-        font-size: $contact-label-mobile-font-size;
+        font-size: variables.$contact-label-mobile-font-size;
       }
       .value {
-        font-size: $contact-value-mobile-font-size;
+        font-size: variables.$contact-value-mobile-font-size;
         padding-bottom: 24px;
       }
     }

@@ -1,4 +1,5 @@
-@import "./animations.scss";
+@use "animations.scss";
+@use "variables";
 
 body {
   width: 100vw;
@@ -8,11 +9,11 @@ body {
   align-items: center;
   overflow-x: hidden;
   .header {
-    animation: fadeIn $animation-time;
+    animation: fadeIn variables.$animation-time;
     display: flex;
     padding-bottom: 16px;
     width: 100%;
-    font-size: $name-font-size;
+    font-size: variables.$name-font-size;
     letter-spacing: 0.015em;
     .name {
       font-family: "Authentic Sans Condensed";
@@ -28,13 +29,13 @@ body {
         cursor: pointer;
       }
       .selected {
-        animation: select $animation-time;
+        animation: select variables.$animation-time;
         font-weight: 800;
         order: 2;
         cursor: pointer;
       }
       .deselected {
-        animation: deselect $animation-time;
+        animation: deselect variables.$animation-time;
         order: 3;
         cursor: pointer;
       }
@@ -44,21 +45,21 @@ body {
     width: 100%;
     height: 100%;
     &.initialLoad {
-      animation: simpleFadeIn $animation-time;
+      animation: simpleFadeIn variables.$animation-time;
     }
   }
 
 
   /* Tablet and Smaller Desktop */
-  @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
+  @media (min-width: variables.$sm-mobile-max) and (max-width: variables.$sm-desktop-max) {
   }
 
   /* Phones */
-  @media (max-width: $sm-mobile-max) {
+  @media (max-width: variables.$sm-mobile-max) {
     padding: 0;
     // width
     .header {
-      font-size: $name-mobile-font-size;
+      font-size: variables.$name-mobile-font-size;
       flex-direction: column;
       padding: 12px 26px;
       margin: 0;

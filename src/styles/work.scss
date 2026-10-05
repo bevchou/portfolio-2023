@@ -1,4 +1,6 @@
-@import "./animations.scss";
+@use "animations.scss";
+@use "variables";
+
 .work {
   width: calc(100vw - 80px);
   height: 100%;
@@ -15,22 +17,22 @@
   .listView {
     &.hidden {
       opacity: 0;
-      animation: simpleFadeOut $animation-fast-time;
+      animation: simpleFadeOut variables.$animation-fast-time;
     }
     &.visible {
       opacity: 1;
-      animation: simpleFadeIn $animation-fast-time;
+      animation: simpleFadeIn variables.$animation-fast-time;
     }
   }
 
   /* Big Desktop */
-  @media (min-width: $big-desktop-min) {
-    max-width: $max-container-width;
+  @media (min-width: variables.$big-desktop-min) {
+    max-width: variables.$max-container-width;
   }
 
-  @media (max-width: $sm-mobile-max) {
+  @media (max-width: variables.$sm-mobile-max) {
     width: 100vw;
-    padding-bottom: $extra-mobile-bottom-padding;
+    padding-bottom: variables.$extra-mobile-bottom-padding;
     // height: 100%;
     &.fixedHeight {
       height: auto;
@@ -40,10 +42,10 @@
   // animations
   &.hidden {
     opacity: 0;
-    animation: simpleFadeOut $animation-half-time;
+    animation: simpleFadeOut variables.$animation-half-time;
   }
   &.visible {
     opacity: 1;
-    animation: simpleFadeIn $animation-half-time;
+    animation: simpleFadeIn variables.$animation-half-time;
   }
 }

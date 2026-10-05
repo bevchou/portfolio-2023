@@ -1,3 +1,5 @@
+@use "variables";
+
 .imageScroller {
   position: relative;
   width: 100%;
@@ -33,9 +35,9 @@
     justify-content: space-between;
     align-items: center;
     .imgCount {
-      font-family: $imgScroller-count-font-family;
-      font-size: $imgScroller-count-font-size;
-      font-weight: $imgScroller-count-font-weight;
+      font-family: variables.$imgScroller-count-font-family;
+      font-size: variables.$imgScroller-count-font-size;
+      font-weight: variables.$imgScroller-count-font-weight;
       padding-bottom: 16px;
     }
     .embedVideo {
@@ -59,12 +61,12 @@
     .caption {
       padding: 16px 16px 0 16px;
       text-align: center;
-      font-family: $imgScroller-caption-font-family;
-      font-size: $imgScroller-caption-font-size;
+      font-family: variables.$imgScroller-caption-font-family;
+      font-size: variables.$imgScroller-caption-font-size;
     }
     .mobileNote {
       display: none;
-      @media (max-width: $sm-mobile-max) {
+      @media (max-width: variables.$sm-mobile-max) {
         display: inherit;
         position: absolute;
         top: 34px;
@@ -73,22 +75,22 @@
     }
   }
   /* Big Desktop */
-  @media (min-width: $big-desktop-min) {
+  @media (min-width: variables.$big-desktop-min) {
     .arrowNav {
-      left: calc((100% - #{$big-desktop-min}) * 0.5 + 114px);
+      left: calc((100% - #{variables.$big-desktop-min}) * 0.5 + 114px);
       width: 602px;
     }
   }
   /* Phones */
-  @media (max-width: $sm-mobile-max) {
+  @media (max-width: variables.$sm-mobile-max) {
     .arrowNav {
       display: none;
     }
     .imgCount {
-      font-size: $imgScroller-count-mobile-font-size;
+      font-size: variables.$imgScroller-count-mobile-font-size;
     }
     .caption {
-      font-size: $imgScroller-caption-mobile-font-size;
+      font-size: variables.$imgScroller-caption-mobile-font-size;
     }
   }
 }

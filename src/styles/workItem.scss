@@ -1,25 +1,27 @@
+@use "variables";
+
 .workItem {
   width: 100%;
-  height: $workItem-height;
-  border: $border-style;
+  height: variables.$workItem-height;
+  border: variables.$border-style;
   display: flex;
   cursor: pointer;
   .name,
   .year {
-    font-size: $workItem-name-font-size;
-    font-weight: $workItem-name-font-weight;
+    font-size: variables.$workItem-name-font-size;
+    font-weight: variables.$workItem-name-font-weight;
     width: 94px;
   }
   .name {
-    width: calc(50% - $workItem-height);
+    width: calc(50% - variables.$workItem-height);
   }
   .tags {
-    font-family: $workItem-tag-font-family;
-    font-size: $workItem-tag-font-size;
+    font-family: variables.$workItem-tag-font-family;
+    font-size: variables.$workItem-tag-font-size;
     flex: 1;
   }
   .indicator {
-    width: calc($workItem-height - 8px);
+    width: calc(variables.$workItem-height - 8px);
     padding: 0;
     justify-content: center;
     svg {
@@ -29,7 +31,7 @@
     }
     .dot {
       transition: 0.25s;
-      border: $border-style;
+      border: variables.$border-style;
       width: 20px;
       height: 20px;
       border-radius: 20px;
@@ -46,12 +48,12 @@
     border-top: none;
   }
   div:not(:last-child) {
-    border-right: $border-style;
+    border-right: variables.$border-style;
   }
   img {
-    border-right: $border-style;
-    height: $workItem-height;
-    width: $workItem-height;
+    border-right: variables.$border-style;
+    height: variables.$workItem-height;
+    width: variables.$workItem-height;
     z-index: -1;
     &:first-child {
       margin-top: -4px;
@@ -64,17 +66,17 @@
         opacity: 1;
       }
       .dot {
-        background-color: $text-color-main;
+        background-color: variables.$text-color-main;
       }
     }
   }
 
   /* Tablet and Smaller Desktop */
-  @media (min-width: $sm-mobile-max) and (max-width: $sm-desktop-max) {
+  @media (min-width: variables.$sm-mobile-max) and (max-width: variables.$sm-desktop-max) {
   }
 
   /* Phones */
-  @media (max-width: $sm-mobile-max) {
+  @media (max-width: variables.$sm-mobile-max) {
     border-right: none;
     border-left: none;
 
@@ -83,11 +85,11 @@
     }
     .name {
       flex: 1;
-      font-size: $workItem-name-mobile-font-size;
+      font-size: variables.$workItem-name-mobile-font-size;
       padding: 16px;
     }
     .indicator {
-      border-left: $border-style;
+      border-left: variables.$border-style;
       svg {
         margin-left: -4px;
         // margin-top: -4px;

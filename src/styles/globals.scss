@@ -1,13 +1,13 @@
-@import "./variables.scss";
-@import "./fonts.scss";
+@use "variables.scss";
+@use "fonts.scss";
 
-@import "./404.scss";
-@import "./home.scss";
-@import "./about.scss";
-@import "./work.scss";
-@import "./workItem.scss";
-@import "./workView.scss";
-@import "./imageScroller.scss";
+@use "404.scss" as errorPage;
+@use "home.scss";
+@use "about.scss";
+@use "work.scss";
+@use "workItem.scss";
+@use "workView.scss";
+@use "imageScroller.scss";
 
 * {
   box-sizing: border-box;
@@ -17,15 +17,15 @@
 
 html,
 body {
-  letter-spacing: $big-body-letter-spacing;
+  letter-spacing: variables.$big-body-letter-spacing;
   font-family: "Authentic Sans";
   max-width: 100vw;
   overflow-x: hidden;
 }
 
 body {
-  color: $text-color-main;
-  background: $background-color;
+  color: variables.$text-color-main;
+  background: variables.$background-color;
   a {
     color: #a584bd;
   }
