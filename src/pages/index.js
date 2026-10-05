@@ -44,7 +44,7 @@ export default function Home() {
     <>
       <Head>
         <title>BEVERLY CHOU</title>
-        <meta name="description" content="personal website of beverly chou" />
+        <meta name="description" content="Beverly Chou is a creative technolgist and designer. View selected past projects and get in touch." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
